@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #A9CBB5;  /* Light forest green background */
     color: #ffffff;  /* White text */
     line-height: 1.8;
     display: flex;
-    flex-direction: column;  /* Make the content flow from top to bottom */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -22,102 +22,133 @@ body {
 }
 
 /* Header Styles */
-header h1 {
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.left-header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    font-weight: 700;
+    font-size: 3rem;
     color: #ffffff;  /* White text */
     text-transform: uppercase;
     letter-spacing: 2px;
-    white-space: nowrap;  /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflow if the text is too long */
-    text-overflow: ellipsis; /* Show ellipsis if text overflows */
 }
 
-header h2 {
+.right-header h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
-    font-weight: 400;
-    color: #1b5e20;  /* Forest Green color */
-    margin-bottom: 30px;
+    color: #1b5e20;  /* Forest Green */
+    text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+.portfolio-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-top: 80px;  /* Space from top header */
+    color: #1b5e20;  /* Forest Green */
     text-transform: uppercase;
 }
 
-/* Main container styling */
+/* Main content container */
 .container {
     background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark background */
     padding: 40px;
     width: 90%;
     max-width: 900px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-    border-radius: 0;  /* Remove rounded edges, sharp edges */
+    border-radius: 0;  /* Sharp edges */
 }
 
 /* About Section Styles */
 .about p {
-    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;  /* Larger font size */
     color: #f4f4f4;  /* Slightly off-white for readability */
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-/* Footer Styles */
+/* Contact Info Styling - Single Line */
+.about p:last-of-type {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+/* LinkedIn Box Styling */
 footer {
     margin-top: 30px;
 }
 
-/* LinkedIn Button (Forest Green) */
-.linkedin-link {
+.linkedin-box {
+    font-family: 'Playfair Display', serif;
     color: #1b5e20;  /* Forest Green */
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 15px 30px;
-    border: 2px solid #1b5e20;  /* Border color matches text */
-    border-radius: 5px;
-    font-weight: 500;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    border: 2px solid #1b5e20; /* Border matches text */
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.linkedin-link:hover {
-    background-color: #1b5e20; /* Hover with Forest Green */
+.linkedin-box:hover {
+    background-color: #1b5e20;
     color: #ffffff;
-    border: 2px solid transparent;
 }
 
 /* Responsive Design */
 @media (max-width: 800px) {
-    header h1 {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    header .left-header h1 {
+        font-size: 2.5rem;
     }
-    
-    header h2 {
+
+    header .right-header h2 {
         font-size: 1.5rem;
     }
 
+    .portfolio-title {
+        font-size: 3rem;
+    }
+
     .about p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 500px) {
-    header h1 {
+    header .left-header h1 {
         font-size: 2rem;
     }
 
-    header h2 {
+    header .right-header h2 {
         font-size: 1.2rem;
     }
 
-    .about p {
-        font-size: 0.9rem;
+    .portfolio-title {
+        font-size: 2.5rem;
     }
 
-    .linkedin-link {
+    .about p {
         font-size: 1rem;
-        padding: 12px 24px;
+    }
+
+    .linkedin-box {
+        font-size: 1rem;
+        padding: 8px 20px;
     }
 }
