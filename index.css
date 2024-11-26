@@ -21,7 +21,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 20px;
+    padding: 120px 20px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -46,6 +46,9 @@ body {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-button {
@@ -95,7 +98,7 @@ body {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
 
@@ -173,7 +176,6 @@ body {
     font-size: 2rem;
     cursor: pointer;
     display: none;
-    transition: background-color 0.3s ease;
 }
 
 .scroll-top:hover {
@@ -182,6 +184,8 @@ body {
 
 /* Footer */
 footer {
-    background-color: #111;
-    padding: 30px 20px;
-    color
+    background-color: #222;
+    padding: 20px;
+    color: #ddd;
+    font-size: 1rem;
+}
