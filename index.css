@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg'); /* High-quality background image */
+    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
-    color: #f8f8f8; /* Light text on dark background */
+    color: #f8f8f8; /* Light text color */
     line-height: 1.8;
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@ body {
     position: relative;
 }
 
-/* Add a dark overlay to ensure text stands out against the background */
+/* Dark overlay to make text stand out */
 body::before {
     content: '';
     position: absolute;
@@ -29,12 +30,13 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: -1; /* Send the overlay behind content */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Keep the overlay behind the content */
 }
 
+/* Container for content */
 .container {
-    background: rgba(0, 0, 0, 0.7); /* Slightly darker background for container */
+    background: rgba(0, 0, 0, 0.7); /* Dark container for content */
     padding: 40px;
     border-radius: 10px;
     width: 90%;
@@ -42,40 +44,40 @@ body::before {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
 }
 
-/* Header styling */
+/* Header Styles */
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     margin-bottom: 20px;
     font-weight: 700;
     color: #fff; /* White text */
-    text-transform: uppercase;
+    text-transform: uppercase; /* Uppercase text for sophistication */
 }
 
 header h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
-    color: #e0e0e0;
+    color: #e0e0e0; /* Light gray color */
     margin-bottom: 30px;
-    letter-spacing: 2px; /* Add spacing between letters for a classy effect */
+    letter-spacing: 2px; /* Space out the letters for elegance */
 }
 
-/* About section styling */
+/* About Section Styles */
 .about p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #e0e0e0; /* Light gray text */
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     margin-top: 40px;
 }
 
-/* LinkedIn button styling */
+/* LinkedIn Button (Gold Accent) */
 .linkedin-link {
     color: #f5a623; /* Gold color */
     font-size: 1.2rem;
@@ -94,7 +96,7 @@ footer {
     border: 2px solid transparent;
 }
 
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
