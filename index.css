@@ -1,17 +1,15 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg'); /* Background image */
+    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
-    color: #f8f8f8; /* Light text color */
+    color: #f8f8f8; 
     line-height: 1.8;
     display: flex;
     justify-content: center;
@@ -22,7 +20,6 @@ body {
     position: relative;
 }
 
-/* Dark overlay to make text stand out */
 body::before {
     content: '';
     position: absolute;
@@ -30,56 +27,51 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: -1; /* Keep the overlay behind the content */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
 
-/* Container for content */
 .container {
-    background: rgba(0, 0, 0, 0.7); /* Dark container for content */
+    background: rgba(0, 0, 0, 0.7); 
     padding: 40px;
     border-radius: 10px;
     width: 90%;
     max-width: 800px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); 
 }
 
-/* Header Styles */
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     margin-bottom: 20px;
     font-weight: 700;
-    color: #fff; /* White text */
-    text-transform: uppercase; /* Uppercase text for sophistication */
+    color: #fff; 
+    text-transform: uppercase; 
 }
 
 header h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
-    color: #e0e0e0; /* Light gray color */
+    color: #e0e0e0; 
     margin-bottom: 30px;
-    letter-spacing: 2px; /* Space out the letters for elegance */
+    letter-spacing: 2px; 
 }
 
-/* About Section Styles */
 .about p {
     font-size: 1.2rem;
-    color: #e0e0e0; /* Light gray text */
+    color: #e0e0e0; 
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 
-/* Footer Styles */
 footer {
     margin-top: 40px;
 }
 
-/* LinkedIn Button (Gold Accent) */
 .linkedin-link {
-    color: #f5a623; /* Gold color */
+    color: #f5a623; 
     font-size: 1.2rem;
     text-decoration: none;
     padding: 15px 30px;
@@ -96,7 +88,6 @@ footer {
     border: 2px solid transparent;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
