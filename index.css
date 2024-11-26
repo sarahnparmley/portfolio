@@ -6,10 +6,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg'); 
-    background-size: cover;
-    background-position: center;
-    color: #f8f8f8; 
+    background-color: #0e1c1b;  
+    color: #ffffff;  
     line-height: 1.8;
     display: flex;
     justify-content: center;
@@ -27,55 +25,56 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: -1; 
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text stand out */
+    z-index: -1;
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark background */
     padding: 40px;
     border-radius: 10px;
     width: 90%;
-    max-width: 800px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); 
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
     font-weight: 700;
-    color: #fff; 
-    text-transform: uppercase; 
+    color: #ffffff;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
-    color: #e0e0e0; 
+    color: #d9e1d2;  
     margin-bottom: 30px;
-    letter-spacing: 2px; 
+    letter-spacing: 1.5px;
 }
 
 .about p {
-    font-size: 1.2rem;
-    color: #e0e0e0; 
+    font-size: 1.1rem;
+    color: #f4f4f4;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .linkedin-link {
-    color: #f5a623; 
+    color: #1b5e20;  
     font-size: 1.2rem;
     text-decoration: none;
     padding: 15px 30px;
-    border: 2px solid #f5a623;
+    border: 2px solid #1b5e20;  
     border-radius: 5px;
     font-weight: 500;
     text-transform: uppercase;
@@ -83,21 +82,40 @@ footer {
 }
 
 .linkedin-link:hover {
-    background-color: #f5a623;
-    color: #fff;
+    background-color: #1b5e20; 
+    color: #ffffff;
     border: 2px solid transparent;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     header h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .about p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .linkedin-link {
+        font-size: 1rem;
+        padding: 12px 24px;
     }
 }
