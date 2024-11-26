@@ -1,3 +1,4 @@
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,67 +6,95 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg');
+    font-family: 'Roboto', sans-serif;
+    background-image: url('karsten-winegeart-Zu51HKFbI7Q-unsplash.jpg'); /* High-quality background image */
     background-size: cover;
     background-position: center;
-    color: #ffffff;
-    line-height: 1.6;
+    color: #f8f8f8; /* Light text on dark background */
+    line-height: 1.8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     text-align: center;
+    position: relative;
+}
+
+/* Add a dark overlay to ensure text stands out against the background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Send the overlay behind content */
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.6); 
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker background for container */
+    padding: 40px;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
 }
 
+/* Header styling */
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
     font-weight: 700;
+    color: #fff; /* White text */
+    text-transform: uppercase;
 }
 
 header h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: #e0e0e0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 2px; /* Add spacing between letters for a classy effect */
 }
 
+/* About section styling */
 .about p {
     font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #f0f0f0;
+    color: #e0e0e0; /* Light gray text */
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
+/* Footer */
 footer {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
+/* LinkedIn button styling */
 .linkedin-link {
-    color: #f5a623;
+    color: #f5a623; /* Gold color */
     font-size: 1.2rem;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: 2px solid #f5a623;
     border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .linkedin-link:hover {
     background-color: #f5a623;
     color: #fff;
+    border: 2px solid transparent;
 }
 
+/* Media Queries */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
