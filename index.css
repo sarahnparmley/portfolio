@@ -36,7 +36,7 @@ header {
 .name-container h1 {
     font-family: 'Playfair Display', serif;
     font-size: 5rem;  /* Large font size for name */
-    color: #ffffff;  /* White text */
+    color: #1b5e20;  /* Dark Green for name */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -44,10 +44,10 @@ header {
 .name-container h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    color: #1b5e20;  /* Forest Green */
-    margin-top: 10px;
+    color: #ffffff;  /* White for graphic designer */
+    margin-top: 5px;  /* Reduced margin for better alignment */
     letter-spacing: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Added space between h2 and the box */
 }
 
 /* Main content container */
@@ -62,7 +62,7 @@ header {
 
 /* About Section Styles */
 .about p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;  /* Use the same font as the graphic designer */
     font-size: 1.5rem;  /* Larger font size */
     color: #f4f4f4;  /* Slightly off-white for readability */
     margin-bottom: 20px;
@@ -71,7 +71,7 @@ header {
 
 /* Contact Info Styling - Single Line */
 .about p:last-of-type {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif; /* Same font as above */
     font-size: 1.5rem;
     color: #f4f4f4;
     margin-bottom: 20px;
@@ -84,7 +84,7 @@ footer {
 }
 
 .linkedin-box {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;  /* White text */
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -123,6 +123,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 800px) {
+    /* Adjusting font sizes for smaller screens */
     .name-container h1 {
         font-size: 3rem;
     }
@@ -131,16 +132,27 @@ footer {
         font-size: 1.5rem;
     }
 
-    .portfolio-title {
-        font-size: 3rem;
+    .container {
+        width: 95%;
+        padding: 30px;
     }
 
     .about p {
+        font-size: 1.3rem;
+    }
+
+    .footer-box p {
+        font-size: 2rem;
+    }
+
+    .linkedin-box {
         font-size: 1.2rem;
+        padding: 8px 20px;
     }
 }
 
 @media (max-width: 500px) {
+    /* Even smaller devices, adjust layout and font sizes */
     .name-container h1 {
         font-size: 2.5rem;
     }
@@ -150,7 +162,7 @@ footer {
     }
 
     .footer-box p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .about p {
@@ -159,6 +171,35 @@ footer {
 
     .linkedin-box {
         font-size: 1rem;
-        padding: 8px 20px;
+        padding: 8px 15px;
+        width: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Extremely small devices like portrait phone mode */
+    .name-container h1 {
+        font-size: 2rem;
+    }
+
+    .name-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .footer-box p {
+        font-size: 1.3rem;
+    }
+
+    .linkedin-box {
+        font-size: 1rem;
+        padding: 6px 15px;
     }
 }
