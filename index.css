@@ -46,6 +46,9 @@ header h1 {
     color: #ffffff;  
     text-transform: uppercase;
     letter-spacing: 2px;
+    white-space: nowrap;  
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 header h2 {
