@@ -46,7 +46,7 @@ header {
     font-size: 2rem;
     color: #1b5e20;  /* Forest Green */
     margin-top: 10px;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
 }
 
 /* Main content container */
@@ -115,9 +115,9 @@ footer {
 
 .footer-box p {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 /* Responsive Design */
