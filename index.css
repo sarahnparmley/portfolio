@@ -25,17 +25,17 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text stand out */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: -1;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.7);  
     padding: 40px;
     border-radius: 10px;
     width: 90%;
     max-width: 900px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
 }
 
 header h1 {
