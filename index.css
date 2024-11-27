@@ -41,9 +41,9 @@ header {
 }
 
 .contact-info {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    color: #000000;
+    color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -82,9 +82,9 @@ header {
 
 /* About Section Styles */
 .about p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;  /* Larger font size */
-    color: #f4f4f4;  /* Slightly off-white for readability */
+    color: #ffffff;  /* Slightly off-white for readability */
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -95,7 +95,7 @@ footer {
 }
 
 .linkedin-box {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;  /* White text */
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -118,7 +118,7 @@ footer {
 .footer-box {
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
-    background-color: #A9CBB5;  /* Match the container background color */
+    background-color: #304529;  /* Match the container background color */
     color: #ffffff;  /* White text */
     padding: 20px;
     text-align: center;
