@@ -18,6 +18,7 @@ body {
     min-height: 100vh;  /* Ensure the body can scroll */
     margin: 0;
     text-align: center;
+    padding-top: 120px; /* Add space at the top to prevent overlap */
 }
 
 /* Header Styles */
@@ -29,7 +30,6 @@ header {
     flex-direction: column;
     padding: 0 20px;
     position: relative;
-    top: 40px; /* Add space above header */
 }
 
 .name-container h1 {
@@ -65,6 +65,7 @@ header {
     max-width: 900px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
     border-radius: 0;  /* Sharp edges */
+    margin-bottom: 60px; /* Prevent overlap with footer */
 }
 
 /* About Section Styles */
@@ -198,4 +199,3 @@ footer {
         padding: 6px 15px;
     }
 }
-
