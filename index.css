@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: #A9CBB5;  /* Light forest green background */
     color: #ffffff;  /* White text */
     line-height: 1.8;
@@ -33,7 +33,7 @@ header {
 }
 
 .name-container h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;  /* Large font size for name */
     color: #ffffff;  /* White for name */
     text-transform: uppercase;
@@ -41,7 +41,7 @@ header {
 }
 
 .contact-info {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2rem;
     color: #ffffff;
     margin-top: 10px;
@@ -82,7 +82,7 @@ header {
 
 /* About Section Styles */
 .about p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;  /* Larger font size */
     color: #ffffff;  /* Slightly off-white for readability */
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ footer {
 }
 
 .linkedin-box {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     color: #ffffff;  /* White text */
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -128,7 +128,7 @@ footer {
 
 .footer-box p {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
