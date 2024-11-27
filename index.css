@@ -1,3 +1,26 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #A9CBB5;  /* Light forest green background */
+    color: #ffffff;  /* White text */
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;  /* Ensure the body can scroll */
+    margin: 0;
+    text-align: center;
+    padding-top: 120px; /* Add space at the top to prevent overlap */
+}
+
 /* Header Styles */
 header {
     width: 100%;
