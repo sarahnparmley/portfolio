@@ -67,7 +67,7 @@ header {
     margin: 40px auto; /* Center the content */
     padding: 40px;
     text-align: center;
-    background-color: #A9CBB5;  /* Set background to footer box color */
+    background-color: #304529;  /* Set background to footer box color */
     border-radius: 8px; /* Add rounded corners for a smooth look */
 }
 
@@ -99,6 +99,11 @@ footer {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.linkedin-box a {
+    color: white;  /* Make the LinkedIn link white */
+    text-decoration: none;  /* Remove underline from the link */
+}
+
 .linkedin-box:hover {
     background-color: #304529;  /* Darken on hover */
     color: #ffffff;
@@ -108,8 +113,8 @@ footer {
 .footer-box {
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
-    background-color: #304529;  /* Match the container background color */
-    color: #ffffff;  /* White text */
+    background-color: #ffffff;  /* White background for footer */
+    color: #A9CBB5;  /* Light green text color to match background */
     padding: 20px;
     text-align: center;
     position: relative;
@@ -121,6 +126,7 @@ footer {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #A9CBB5;  /* Light green text */
 }
 
 /* Responsive Design */
