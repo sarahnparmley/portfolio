@@ -98,7 +98,7 @@ footer {
 }
 
 .linkedin-box:hover {
-    background-color: #1b5e20;  /* Darken on hover */
+    background-color: #304529;  /* Darken on hover */
     color: #ffffff;
 }
 
@@ -106,7 +106,7 @@ footer {
 .footer-box {
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
-    background-color: ;  /* Match the container background color */
+    background-color: #304529;  /* Match the container background color */
     color: #ffffff;  /* White text */
     padding: 20px;
     text-align: center;
