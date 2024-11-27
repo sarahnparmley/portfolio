@@ -62,18 +62,13 @@ header {
 
 /* About Section Styles */
 .about {
-    width: 400px; /* Fixed width to form a square-like shape */
-    height: 400px; /* Fixed height to form a square-like shape */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-    border-radius: 10px;  /* Rounded corners for a smooth look */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: left;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit width to make it more readable */
+    margin: 40px auto; /* Center the content */
+    padding: 40px;
+    text-align: center;
+    background-color: #304529;  /* Set background to footer box color */
+    border-radius: 8px; /* Add rounded corners for a smooth look */
 }
 
 .about p {
@@ -139,8 +134,7 @@ footer {
     }
 
     .about {
-        width: 90%;  /* Make the square smaller on smaller screens */
-        height: auto;
+        width: 95%;  /* Make the square smaller on smaller screens */
     }
 
     .footer-box p {
@@ -167,7 +161,7 @@ footer {
     }
 
     .about {
-        width: 100%;  /* Make the square full width on mobile */
+        width: 100%;  /* Full width for mobile */
         height: auto;
     }
 
@@ -187,17 +181,13 @@ footer {
         font-size: 1.2rem;
     }
 
-    .container {
-        padding: 20px;
+    .footer-box p {
+        font-size: 1.3rem;
     }
 
     .about {
         width: 100%; /* Full width on very small screens */
         height: auto;
-    }
-
-    .footer-box p {
-        font-size: 1.3rem;
     }
 
     .linkedin-box {
