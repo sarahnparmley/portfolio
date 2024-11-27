@@ -13,9 +13,9 @@ body {
     line-height: 1.8;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;  /* Allow scroll */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;  /* Make sure body takes full height of the viewport */
     margin: 0;
     text-align: center;
     position: relative;
@@ -36,9 +36,16 @@ header {
 .name-container h1 {
     font-family: 'Playfair Display', serif;
     font-size: 5rem;  /* Large font size for name */
-    color: #1b5e20;  /* Dark Green for name */
+    color: #ffffff;  /* White for name */
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.contact-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 10px;
 }
 
 .name-container h2 {
@@ -69,15 +76,6 @@ header {
     line-height: 1.6;
 }
 
-/* Contact Info Styling - Single Line */
-.about p:last-of-type {
-    font-family: 'Roboto', sans-serif; /* Same font as above */
-    font-size: 1.5rem;
-    color: #f4f4f4;
-    margin-bottom: 20px;
-    display: inline;
-}
-
 /* LinkedIn Box Styling */
 footer {
     margin-top: 30px;
@@ -106,12 +104,10 @@ footer {
 /* Footer Box Styling */
 .footer-box {
     width: 100%;
-    background-color: #1b5e20;  /* Forest green background */
+    background-color: #A9CBB5;  /* Match the container background color */
     color: #ffffff;  /* White text */
     padding: 20px;
     text-align: center;
-    position: absolute;
-    bottom: 0;
 }
 
 .footer-box p {
@@ -123,7 +119,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 800px) {
-    /* Adjusting font sizes for smaller screens */
     .name-container h1 {
         font-size: 3rem;
     }
@@ -152,7 +147,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    /* Even smaller devices, adjust layout and font sizes */
     .name-container h1 {
         font-size: 2.5rem;
     }
@@ -177,7 +171,6 @@ footer {
 }
 
 @media (max-width: 360px) {
-    /* Extremely small devices like portrait phone mode */
     .name-container h1 {
         font-size: 2rem;
     }
