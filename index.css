@@ -32,10 +32,17 @@ header {
     margin-top: 5px;
     letter-spacing: 3px;
     margin-bottom: 40px; /* Reduced space */
-    
-    /* Add white line under 'GRAPHIC DESIGNER' */
-    border-bottom: 2px solid #ffffff;  /* Creates a white line */
-    padding-bottom: 10px;  /* Space between the text and the line */
+    position: relative;
+}
+
+/* Add a white line under 'GRAPHIC DESIGNER' using ::after */
+.name-container h2::after {
+    content: "";
+    display: block;
+    width: 80%;  /* Adjust width of the line */
+    height: 2px;  /* Thickness of the line */
+    background-color: #ffffff;  /* White color for the line */
+    margin: 20px auto 0;  /* Center the line with space above */
 }
 
 /* Main content container */
