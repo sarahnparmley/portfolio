@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Roboto', sans-serif;  /* Use Roboto for body text */
     background-color: #A9CBB5;  /* Light forest green background */
     color: #ffffff;  /* White text */
     line-height: 1.8;
@@ -18,7 +18,7 @@ body {
     min-height: 100vh;  /* Ensure the body can scroll */
     margin: 0;
     text-align: center;
-    padding-top: 120px; /* Add space at the top to prevent overlap */
+    padding-top: 40px; /* Reduced padding to bring name closer to the top */
 }
 
 /* Header Styles */
@@ -28,12 +28,12 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 10px 20px; /* Reduced top and bottom padding */
     position: relative;
 }
 
 .name-container h1 {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for the name */
     font-size: 5rem;  /* Large font size for name */
     color: #ffffff;  /* White for name */
     text-transform: uppercase;
@@ -41,7 +41,7 @@ header {
 }
 
 .contact-info {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Roboto', sans-serif;  /* Use Roboto for contact info */
     font-size: 1.2rem;
     color: #ffffff;
     margin-top: 10px;
@@ -49,7 +49,7 @@ header {
 }
 
 .name-container h2 {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for headings */
     font-size: 2rem;
     color: #ffffff;  /* White for graphic designer */
     margin-top: 5px;
@@ -82,7 +82,7 @@ header {
 
 /* About Section Styles */
 .about p {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Roboto', sans-serif;  /* Use Roboto for body text */
     font-size: 1.5rem;  /* Larger font size */
     color: #ffffff;  /* Slightly off-white for readability */
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ footer {
 }
 
 .linkedin-box {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Roboto', sans-serif;  /* Use Roboto for LinkedIn button */
     color: #ffffff;  /* White text */
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -127,7 +127,7 @@ footer {
 }
 
 .footer-box p {
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
+    font-family: 'Roboto', sans-serif;  /* Use Roboto for footer text */
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
