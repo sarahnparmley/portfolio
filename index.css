@@ -124,35 +124,42 @@ footer {
     text-decoration: none;
 }
 
+/* Footer Box Styling */
 .footer-box {
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     background-color: #ffffff;
     color: #000000;
-    padding: 20px 0; 
+    padding: 20px 0;
     text-align: center;
     position: relative;
-    overflow: hidden; 
-    height: 90px; 
+    height: 60px; /* Adjust based on your design */
+    overflow: hidden; /* Hide any overflowing text */
 }
 
+/* Continuous Scrolling Text */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #000000;
-    white-space: nowrap; 
-    animation: scrollText 10s linear infinite; 
-    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite; /* 15s for slower speed */
+    display: inline-block; /* Ensure text stays in one line */
+    margin: 0;
 }
 
+/* Keyframe for Continuous Scrolling */
 @keyframes scrollText {
     0% {
-        transform: translateX(0); 
+        transform: translateX(100%); /* Start from the right side of the screen */
+    }
+    50% {
+        transform: translateX(-100%); /* Move the text left by 100% of its width */
     }
     100% {
-        transform: translateX(-100%); 
+        transform: translateX(-200%); /* Move the text left by an additional 100% */
     }
 }
 
