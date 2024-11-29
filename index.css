@@ -94,13 +94,13 @@ footer {
     width: 200px;
     margin: 0 auto;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s;  
+    transition: background-color 0.3s
 }
 
 .linkedin-box:hover {
-    background-color: #ffffff;  
-    color: #A9CBB5;  
-    border: 2px solid #A9CBB5;
+    background-color: #0A66C2;  
+    color: #ffffff;  
+    border: 2px solid #ffffff;
 }
 
 .linkedin-box a {
