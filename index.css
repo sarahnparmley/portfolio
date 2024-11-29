@@ -135,6 +135,7 @@ footer {
     overflow: hidden; /* Hide any overflow */
 }
 
+/* The moving text */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
@@ -144,17 +145,18 @@ footer {
     margin: 0;
     white-space: nowrap;  
     display: inline-block;
-    position: absolute; /* Position it in a way that allows it to move */
-    right: 100%;
-    animation: scrollText 20s linear infinite; 
+    position: absolute; 
+    right: 100%; /* Start off-screen */
+    animation: scrollText 30s linear infinite; /* Adjusted for smoother and slower animation */
 }
 
+/* Keyframe animation for scrolling text */
 @keyframes scrollText {
     0% {
-        transform: translateX(100%); 
+        transform: translateX(100%); /* Start the text off-screen on the right */
     }
     100% {
-        transform: translateX(-100%); 
+        transform: translateX(-100%); /* Move the text off-screen to the left */
     }
 }
 
