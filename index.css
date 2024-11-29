@@ -75,7 +75,8 @@ header {
     font-family: 'Bebas Neue', sans-serif;  /* Use Bebas Neue for body text */
     font-size: 1.3rem;  /* Larger font size */
     color: #ffffff;  /* Slightly off-white for readability */
-    margin-bottom: 20px;
+    margin-top: 10px;  /* Reduced space above paragraphs */
+    margin-bottom: 10px;
     line-height: 1.6;
 }
 
