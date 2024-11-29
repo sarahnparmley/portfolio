@@ -135,25 +135,23 @@ footer {
     overflow: hidden; /* Hide any overflow */
 }
 
-/* The moving text */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #000000;
     margin: 0;
-    white-space: nowrap;  /* Prevents text from breaking into new lines */
-    animation: scrollText 15s linear infinite; /* Animation for scrolling text */
+    white-space: nowrap;  
+    animation: scrollText 15s linear infinite; 
 }
 
-/* Keyframe animation for scrolling text */
 @keyframes scrollText {
     0% {
-        transform: translateX(100%); /* Start the text off to the right */
+        transform: translateX(100%); 
     }
     100% {
-        transform: translateX(-100%); /* Move the text to the left */
+        transform: translateX(-100%); 
     }
 }
 
