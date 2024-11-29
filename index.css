@@ -144,7 +144,9 @@ footer {
     margin: 0;
     white-space: nowrap;  
     display: inline-block;
-    animation: scrollText 15s linear infinite; 
+    position: absolute; /* Position it in a way that allows it to move */
+    right: 100%;
+    animation: scrollText 20s linear infinite; 
 }
 
 @keyframes scrollText {
