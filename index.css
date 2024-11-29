@@ -6,23 +6,24 @@
 
 body {
     font-family: 'Bebas Neue', sans-serif;  
-    background-image: url('2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
+    background-image: url('2.jpg');  /* Replace with the path to your image */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    color: #ffffff;  
     line-height: 1.8;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh;  
     margin: 0;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 40px; 
     position: relative;
 }
 
+/* Adding overlay using pseudo-element */
 body::before {
     content: '';
     position: absolute;
@@ -30,8 +31,63 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for transparency */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px; 
+    position: relative;
+}
+
+.name-container h1 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 5rem;  
+    color: #ffffff;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.name-container h2 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 2rem;
+    color: #ffffff;  
+    margin-top: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 40px; 
+    position: relative;
+}
+
+.name-container h2::after {
+    content: "";
+    display: block;
+    position: absolute;  
+    left: 0;  
+    right: 0;  
+    height: 2px;  
+    background-color: #ffffff;  
+    margin: 20px 0 0 0;  
+}
+
+.about {
+    width: 100%;
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 20px 30px;
+    text-align: center;  /* Keeps text centered */
+}
+
+.about p {
+    font-family: 'Bebas Neue', sans-serif;  
+    font-size: 1.3rem;  
+    color: #ffffff;  
+    margin: 10px 0; 
+    line-height: 1.6;
 }
 
 footer {
@@ -42,11 +98,38 @@ footer {
     padding: 20px 0;  
 }
 
+.linkedin-box {
+    font-family: 'Bebas Neue', sans-serif;  
+    color: #ffffff;  
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #000000;  
+    border: 2px solid #ffffff;  
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.linkedin-box:hover {
+    background-color: #0A66C2;  
+    color: #ffffff;  
+    border: 2px solid #ffffff;
+}
+
+.linkedin-box a {
+    color: white;  
+    text-decoration: none;  
+}
+
+/* Footer Box Styling */
 .footer-box {
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    background-color: #ffffff;
-    color: #000000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
+    background-color: #ffffff;  
+    color: #000000;  
     padding: 20px;
     text-align: center;
     position: relative;
@@ -54,22 +137,95 @@ footer {
     overflow: hidden; /* Ensure text stays inside the box */
 }
 
+/* Footer Text Animation */
 .footer-box p {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;  
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #000000;
-    white-space: nowrap; /* Prevent text from wrapping */
-    animation: scrollText 10s linear infinite; /* Apply the scroll effect */
+    color: #000000;  
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: scrollText 10s linear infinite; /* Apply scroll animation */
 }
 
-/* Define the scroll animation */
+/* Keyframe Animation for Scrolling Text */
 @keyframes scrollText {
     0% {
-        transform: translateX(100%); /* Start from the right */
+        transform: translateX(100%); /* Start from the right side */
     }
     100% {
-        transform: translateX(-100%); /* End at the left */
+        transform: translateX(-100%); /* Move to the left side */
+    }
+}
+
+@media (max-width: 800px) {
+    .name-container h1 {
+        font-size: 3rem;
+    }
+
+    .name-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        text-align: center; 
+    }
+
+    .footer-box p {
+        font-size: 2rem;
+    }
+
+    .linkedin-box {
+        font-size: 1.2rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .name-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .name-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .footer-box p {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        width: 100%;  
+        height: auto;
+    }
+
+    .linkedin-box {
+        font-size: 1rem;
+        padding: 8px 15px;
+        width: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .name-container h1 {
+        font-size: 2rem;
+    }
+
+    .name-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-box p {
+        font-size: 1.3rem;
+    }
+
+    .about {
+        width: 100%; 
+        height: auto;
+    }
+
+    .linkedin-box {
+        font-size: 1rem;
+        padding: 6px 15px;
     }
 }
