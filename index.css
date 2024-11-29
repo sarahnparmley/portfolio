@@ -136,7 +136,7 @@ footer {
     position: relative;
     bottom: 0;
     overflow: hidden; /* Ensures text stays inside the box */
-    height: 60px; /* Adjusted height to fit the text */
+    height: 90px; /* Adjusted height to fit the text */
 }
 
 /* Footer Text Animation */
