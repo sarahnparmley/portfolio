@@ -1,92 +1,85 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-    font-family: 'Bebas Neue', sans-serif;  /* Use Bebas Neue for both headings and body text */
-    background-color: #A9CBB5;  /* Light forest green background */
-    color: #ffffff;  /* White text */
+    font-family: 'Bebas Neue', sans-serif;  
+    background-color: #A9CBB5;  
+    color: #ffffff;  
     line-height: 1.8;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100vh;  /* Ensure the body can scroll */
+    min-height: 100vh;  
     margin: 0;
     text-align: center;
-    padding-top: 40px; /* Reduced padding to bring name closer to the top */
+    padding-top: 40px; 
 }
 
-/* Header Styles */
 header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px 20px; /* Reduced top and bottom padding */
+    padding: 10px 20px; 
     position: relative;
 }
 
 .name-container h1 {
-    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for the name */
-    font-size: 5rem;  /* Large font size for name */
-    color: #ffffff;  /* White for name */
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 5rem;  
+    color: #ffffff;  
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .name-container h2 {
-    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for the role */
+    font-family: 'Bebas Neue', sans-serif; 
     font-size: 2rem;
-    color: #ffffff;  /* White for graphic designer */
+    color: #ffffff;  
     margin-top: 5px;
     letter-spacing: 3px;
-    margin-bottom: 40px; /* Reduced space */
+    margin-bottom: 40px; 
     position: relative;
 }
 
-/* Add a white line under 'GRAPHIC DESIGNER' using ::after */
 .name-container h2::after {
     content: "";
     display: block;
-    width: 80%;  /* Adjust width of the line */
-    height: 2px;  /* Thickness of the line */
-    background-color: #ffffff;  /* White color for the line */
-    margin: 20px auto 0;  /* Center the line with space above */
+    width: 80%;  
+    height: 2px;  
+    background-color: #ffffff;  
+    margin: 20px auto 0;  
 }
 
-/* About Section Styles */
 .about {
-    width: 100%; /* Full width */
-    max-width: 600px; /* Limit width to make it more readable */
-    margin: 40px auto; /* Center the content */
-    padding: 40px;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 40px auto; 
+    padding: 10px;
     text-align: center;
-    background-color: #A9CBB5;  /* Set background to footer box color */
-    border-radius: 8px; /* Add rounded corners for a smooth look */
+    background-color: #A9CBB5;  
+    border-radius: 8px; 
 }
 
 .about p {
-    font-family: 'Bebas Neue', sans-serif;  /* Use Bebas Neue for body text */
-    font-size: 1.3rem;  /* Larger font size */
-    color: #ffffff;  /* Slightly off-white for readability */
-    margin-top: 10px;  /* Reduced space above paragraphs */
-    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;  
+    font-size: 1.3rem;  
+    color: #ffffff;  
+    margin: 10px 0; 
     line-height: 1.6;
 }
 
-/* LinkedIn Box Styling */
 footer {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;  /* Equal space above and below LinkedIn box */
+    padding: 20px 0;  
 }
 
 .linkedin-box {
