@@ -82,6 +82,10 @@ header {
 /* LinkedIn Box Styling */
 footer {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;  /* Equal space above and below LinkedIn box */
 }
 
 .linkedin-box {
@@ -89,24 +93,26 @@ footer {
     color: #ffffff;  /* White text */
     font-size: 1.5rem;
     text-transform: uppercase;
-    background-color: #A9CBB5;  /* Light forest green */
-    border: 2px solid #A9CBB5; /* Border matches background */
+    background-color: #A9CBB5;  /* Same color as the background */
+    border: 2px solid #ffffff;  /* Always show white border */
     padding: 10px 30px;
     border-radius: 5px;
     width: 200px;
     margin: 0 auto;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s;
+    transition: border-color 0.3s;  /* Smooth transition for border color */
+}
+
+/* Keep the same background color on hover, only the border will change */
+.linkedin-box:hover {
+    border: 2px solid #ffffff;  /* Maintain white border on hover */
+    background-color: #A9CBB5;  /* Keep the same background color */
+    color: #ffffff;  /* Keep text white */
 }
 
 .linkedin-box a {
     color: white;  /* Make the LinkedIn link white */
     text-decoration: none;  /* Remove underline from the link */
-}
-
-.linkedin-box:hover {
-    background-color: #304529;  /* Darken on hover */
-    color: #ffffff;
 }
 
 /* Footer Box Styling */
