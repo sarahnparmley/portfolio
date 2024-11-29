@@ -97,7 +97,6 @@ footer {
     padding: 20px 0;
 }
 
-/* LinkedIn Box Styling */
 .linkedin-box {
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
@@ -125,38 +124,35 @@ footer {
     text-decoration: none;
 }
 
-/* Footer Box Styling */
 .footer-box {
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     background-color: #ffffff;
     color: #000000;
-    padding: 20px 0; /* Adjusted padding for more space */
+    padding: 20px 0; 
     text-align: center;
     position: relative;
-    bottom: 0;
-    overflow: hidden; /* Ensures text stays inside the box */
-    height: 90px; /* Adjusted height to fit the text */
+    overflow: hidden; 
+    height: 90px; 
 }
 
-/* Footer Text Animation */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #000000;
-    white-space: nowrap; /* Prevents text from wrapping */
-    animation: scrollText 10s linear infinite; /* Apply scroll animation */
+    white-space: nowrap; 
+    animation: scrollText 10s linear infinite; 
+    display: inline-block;
 }
 
-/* Keyframe Animation for Scrolling Text */
 @keyframes scrollText {
     0% {
-        transform: translateX(100%); /* Start from the right */
+        transform: translateX(0); 
     }
     100% {
-        transform: translateX(-100%); /* Move to the left */
+        transform: translateX(-100%); 
     }
 }
 
