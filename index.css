@@ -137,7 +137,7 @@ footer {
     overflow: hidden; /* Ensure text stays inside the box */
 }
 
-/* Footer Text Animation */
+/* Footer Text Styling */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;  
     font-size: 2rem;
@@ -145,13 +145,15 @@ footer {
     letter-spacing: 4px;
     color: #000000;  
     white-space: nowrap; /* Prevents text from wrapping */
+    display: inline-block; /* Needed for the text to scroll */
     animation: scrollText 10s linear infinite; /* Apply scroll animation */
+    padding-right: 100%; /* Add extra space to the right of the text */
 }
 
-/* Keyframe Animation for Scrolling Text */
+/* Keyframe Animation for Scrolling Text (from left to right) */
 @keyframes scrollText {
     0% {
-        transform: translateX(100%); /* Start from the right side */
+        transform: translateX(0); /* Start from the left side */
     }
     100% {
         transform: translateX(-100%); /* Move to the left side */
