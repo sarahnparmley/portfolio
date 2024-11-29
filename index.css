@@ -63,8 +63,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Maximum width for large screens */
-    margin: 40px auto; /* Center the section and give it some top margin */
+    max-width: 1200px; 
+    margin: 40px auto; 
     padding: 10px 30px;
     text-align: left;
     background-color: #000000;  
@@ -72,15 +72,15 @@ header {
 }
 
 .about-text {
-    flex: 1;  /* Allows the text to take up available space */
-    padding-right: 20px; /* Space between text and image */
+    flex: 1;  
+    padding-right: 20px; 
 }
 
 .about-image img {
     width: 100%;
-    max-width: 100px; /* Control the image size */
+    max-width: 60px; 
     height: auto;
-    border-radius: 8px; /* Optional: to round the corners of the image */
+    border-radius: 8px; 
 }
 
 .about p {
