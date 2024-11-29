@@ -83,38 +83,36 @@ footer {
 }
 
 .linkedin-box {
-    font-family: 'Bebas Neue', sans-serif;  /* Use Bebas Neue for LinkedIn button */
-    color: #ffffff;  /* White text */
+    font-family: 'Bebas Neue', sans-serif;  
+    color: #ffffff;  
     font-size: 1.5rem;
     text-transform: uppercase;
-    background-color: #A9CBB5;  /* Same color as the background */
-    border: 2px solid #ffffff;  /* Always show white border */
+    background-color: #A9CBB5;  
+    border: 2px solid #ffffff;  
     padding: 10px 30px;
     border-radius: 5px;
     width: 200px;
     margin: 0 auto;
     text-align: center;
-    transition: border-color 0.3s;  /* Smooth transition for border color */
+    transition: border-color 0.3s;  
 }
 
-/* Keep the same background color on hover, only the border will change */
 .linkedin-box:hover {
-    border: 2px solid #ffffff;  /* Maintain white border on hover */
-    background-color: #A9CBB5;  /* Keep the same background color */
-    color: #ffffff;  /* Keep text white */
+    border: 2px solid #ffffff;  
+    background-color: #A9CBB5;  
+    color: #ffffff; 
 }
 
 .linkedin-box a {
-    color: white;  /* Make the LinkedIn link white */
-    text-decoration: none;  /* Remove underline from the link */
+    color: white;  
+    text-decoration: none;  
 }
 
-/* Footer Box Styling */
 .footer-box {
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
-    background-color: #ffffff;  /* White background for footer */
-    color: #A9CBB5;  /* Light green text color to match background */
+    background-color: #ffffff;  
+    color: #A9CBB5;  
     padding: 20px;
     text-align: center;
     position: relative;
@@ -122,14 +120,13 @@ footer {
 }
 
 .footer-box p {
-    font-family: 'Bebas Neue', sans-serif;  /* Use Bebas Neue for footer text */
+    font-family: 'Bebas Neue', sans-serif;  
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #A9CBB5;  /* Light green text */
+    color: #A9CBB5;  
 }
 
-/* Responsive Design */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
@@ -140,7 +137,7 @@ footer {
     }
 
     .about {
-        width: 95%;  /* Make the square smaller on smaller screens */
+        width: 95%;  
     }
 
     .footer-box p {
@@ -167,7 +164,7 @@ footer {
     }
 
     .about {
-        width: 100%;  /* Full width for mobile */
+        width: 100%;  
         height: auto;
     }
 
@@ -192,7 +189,7 @@ footer {
     }
 
     .about {
-        width: 100%; /* Full width on very small screens */
+        width: 100%; 
         height: auto;
     }
 
