@@ -136,6 +136,11 @@ footer {
     bottom: 0;
 }
 
+about-image {
+    width: 30px;
+    height: 30px;
+}
+
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;  
     font-size: 2rem;
