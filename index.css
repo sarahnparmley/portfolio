@@ -137,12 +137,13 @@ footer {
 
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #000000;
     margin: 0;
     white-space: nowrap;  
+    display: inline-block;
     animation: scrollText 15s linear infinite; 
 }
 
