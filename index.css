@@ -131,12 +131,12 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     background-color: #ffffff;
     color: #000000;
-    padding: 20px;
+    padding: 20px 0; /* Adjusted padding for more space */
     text-align: center;
     position: relative;
     bottom: 0;
     overflow: hidden; /* Ensures text stays inside the box */
-    height: 50px; /* Set a fixed height for the footer */
+    height: 60px; /* Adjusted height to fit the text */
 }
 
 /* Footer Text Animation */
