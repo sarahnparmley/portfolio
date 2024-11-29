@@ -19,7 +19,8 @@ body {
     min-height: 100vh;  
     margin: 0;
     text-align: center;
-    padding-top: 40px; 
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 body::before {
@@ -109,6 +110,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     transition: background-color 0.3s;
+    z-index: 10;
 }
 
 .linkedin-box:hover {
@@ -129,9 +131,10 @@ footer {
     bottom: 0;
     background-color: #ffffff;
     color: #000000;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     z-index: 1000; /* Ensure it is above other content */
+    white-space: nowrap;
     overflow: hidden; /* Hide any overflow */
 }
 
