@@ -97,6 +97,7 @@ footer {
     padding: 20px 0;
 }
 
+/* LinkedIn Box Styling */
 .linkedin-box {
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
@@ -135,10 +136,10 @@ footer {
     position: relative;
     bottom: 0;
     overflow: hidden; /* Ensures text stays inside the box */
-    height: 50px; /* Adjust height of footer box as needed */
+    height: 50px; /* Set a fixed height for the footer */
 }
 
-/* Footer Text Styling */
+/* Footer Text Animation */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
@@ -146,7 +147,6 @@ footer {
     letter-spacing: 4px;
     color: #000000;
     white-space: nowrap; /* Prevents text from wrapping */
-    display: inline-block;
     animation: scrollText 10s linear infinite; /* Apply scroll animation */
 }
 
@@ -160,15 +160,6 @@ footer {
     }
 }
 
-/* Create infinite scrolling effect by duplicating text */
-.footer-box p::after {
-    content: attr(data-text); /* Duplicate the text */
-    display: inline-block;
-    margin-left: 100%; /* Start the duplicate text after the first */
-    animation: scrollText 10s linear infinite; /* Same scroll animation */
-}
-
-/* Optional - adjust speed and size for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
