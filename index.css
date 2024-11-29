@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Bebas Neue', sans-serif;  
-    background-image: url('2.jpg');  
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;  
+    background-image: url('your-image-path.jpg');  /* Replace with the path to your image */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
     color: #ffffff;  
     line-height: 1.8;
     display: flex;
@@ -19,10 +19,11 @@ body {
     min-height: 100vh;  
     margin: 0;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40px; 
+    position: relative;
 }
 
+/* Adding overlay using pseudo-element */
 body::before {
     content: '';
     position: absolute;
@@ -30,8 +31,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: -1; 
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for transparency */
+    z-index: -1; /* Places the overlay behind the content */
 }
 
 header {
@@ -78,7 +79,7 @@ header {
     max-width: 900px; 
     margin: 40px auto; 
     padding: 20px 30px;
-    text-align: center;  
+    text-align: center;  /* Keeps text centered */
 }
 
 .about p {
@@ -110,7 +111,6 @@ footer {
     margin: 0 auto;
     text-align: center;
     transition: background-color 0.3s;
-    z-index: 10;
 }
 
 .linkedin-box:hover {
@@ -124,43 +124,23 @@ footer {
     text-decoration: none;  
 }
 
-/* Footer */
 .footer-box {
     width: 100%;
-    position: fixed;  /* Fix the footer to the bottom */
-    bottom: 0;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 15px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
+    background-color: #ffffff;  
+    color: #000000;  
+    padding: 20px;
     text-align: center;
-    z-index: 1000; /* Ensure it is above other content */
-    white-space: nowrap;
-    overflow: hidden; /* Hide any overflow */
+    position: relative;
+    bottom: 0;
 }
 
-/* The moving text */
 .footer-box p {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;  
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #000000;
-    margin: 0;
-    white-space: nowrap;  
-    display: inline-block;
-    position: absolute; 
-    right: 100%; /* Start off-screen */
-    animation: scrollText 30s linear infinite; /* Adjusted for smoother and slower animation */
-}
-
-/* Keyframe animation for scrolling text */
-@keyframes scrollText {
-    0% {
-        transform: translateX(100%); /* Start the text off-screen on the right */
-    }
-    100% {
-        transform: translateX(-100%); /* Move the text off-screen to the left */
-    }
+    color: #000000;  
 }
 
 @media (max-width: 800px) {
