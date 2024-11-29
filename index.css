@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Bebas Neue', sans-serif;  
-    background-image: url('2.jpg');  /* Replace with the path to your image */
-    background-size: cover;  /* Ensures the image covers the entire screen */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-image: url('2.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
     color: #ffffff;  
     line-height: 1.8;
     display: flex;
@@ -23,7 +23,6 @@ body {
     position: relative;
 }
 
-/* Adding overlay using pseudo-element */
 body::before {
     content: '';
     position: absolute;
@@ -31,8 +30,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for transparency */
-    z-index: -1; /* Places the overlay behind the content */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
 
 header {
@@ -111,6 +110,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     transition: background-color 0.3s;
+    margin-bottom: 20px;
 }
 
 .linkedin-box:hover {
