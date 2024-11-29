@@ -30,8 +30,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay */
-    z-index: -1; /* Places the overlay behind the content */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 header {
@@ -135,6 +135,7 @@ footer {
     position: relative;
     bottom: 0;
     overflow: hidden; /* Ensures text stays inside the box */
+    height: 50px; /* Adjust height of footer box as needed */
 }
 
 /* Footer Text Styling */
@@ -145,32 +146,29 @@ footer {
     letter-spacing: 4px;
     color: #000000;
     white-space: nowrap; /* Prevents text from wrapping */
-    display: inline-block; /* Needed for scrolling effect */
+    display: inline-block;
     animation: scrollText 10s linear infinite; /* Apply scroll animation */
-    padding-right: 100%; /* Add extra space to the right of the text */
 }
 
-/* Keyframe Animation for Scrolling Text (from left to right) */
+/* Keyframe Animation for Scrolling Text */
 @keyframes scrollText {
     0% {
-        transform: translateX(0); /* Start from the left side */
-    }
-    50% {
-        transform: translateX(-50%); /* Scroll halfway */
+        transform: translateX(100%); /* Start from the right */
     }
     100% {
-        transform: translateX(-100%); /* Move completely off the screen */
+        transform: translateX(-100%); /* Move to the left */
     }
 }
 
-/* Repeating Text for Seamless Scrolling Effect */
+/* Create infinite scrolling effect by duplicating text */
 .footer-box p::after {
     content: attr(data-text); /* Duplicate the text */
     display: inline-block;
-    margin-left: 100%; /* Start the duplicate right after the first text */
-    animation: scrollText 10s linear infinite; /* Same scrolling animation */
+    margin-left: 100%; /* Start the duplicate text after the first */
+    animation: scrollText 10s linear infinite; /* Same scroll animation */
 }
 
+/* Optional - adjust speed and size for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
