@@ -59,13 +59,28 @@ header {
 }
 
 .about {
-    width: 100%; 
-    max-width: 600px; 
-    margin: 40px auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 40px auto; /* Center the section and give it some top margin */
     padding: 10px 30px;
-    text-align: center;
+    text-align: left;
     background-color: #000000;  
-    border-radius: 8px; 
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;  /* Allows the text to take up available space */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px; /* Control the image size */
+    height: auto;
+    border-radius: 8px; /* Optional: to round the corners of the image */
 }
 
 .about p {
@@ -129,6 +144,7 @@ footer {
     color: #000000;  
 }
 
+/* Responsive Layout for large screens */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
@@ -139,7 +155,16 @@ footer {
     }
 
     .about {
-        width: 95%;  
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center; /* Center the text */
+    }
+
+    .about-text {
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
+    .about-image img {
+        max-width: 80%; /* Adjust image size */
     }
 
     .footer-box p {
