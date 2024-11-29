@@ -59,28 +59,13 @@ header {
 }
 
 .about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 900px; 
     margin: 40px auto; 
     padding: 10px 30px;
-    text-align: left;
+    text-align: center; 
     background-color: #000000;  
     border-radius: 8px;
-}
-
-.about-text {
-    flex: 1;  
-    padding-right: 20px; 
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 60px; 
-    height: auto;
-    border-radius: 8px; 
 }
 
 .about p {
@@ -144,7 +129,6 @@ footer {
     color: #000000;  
 }
 
-/* Responsive Layout for large screens */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
@@ -155,16 +139,7 @@ footer {
     }
 
     .about {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        text-align: center; /* Center the text */
-    }
-
-    .about-text {
-        padding-right: 0; /* Remove padding for smaller screens */
-    }
-
-    .about-image img {
-        max-width: 80%; /* Adjust image size */
+        text-align: center; 
     }
 
     .footer-box p {
