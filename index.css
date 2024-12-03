@@ -1,9 +1,11 @@
+/* Reset box-model for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-image: url('2.jpg');  
@@ -54,7 +56,7 @@ header {
 
 .name-container h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 5rem;
+    font-size: 7rem;  /* Increased font size */
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -63,13 +65,13 @@ header {
 
 .name-container h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;  /* Increased font size */
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin:20px 0;
+    margin: 20px 0;  /* Kept margin as per your original */
     border-bottom: 5px solid #ffffff; 
-    padding-bottom: 20px; 
+    padding-bottom: 20px; /* Kept padding as per your original */
 }
 
 .about-image {
@@ -93,7 +95,7 @@ footer {
 .linkedin-box {
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 2rem;  /* Increased font size */
     text-transform: uppercase;
     background-color: #000000;
     border: 2px solid #ffffff;
@@ -135,7 +137,7 @@ footer {
 
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.2rem;  /* Increased font size */
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #000000;
@@ -146,36 +148,37 @@ footer {
     margin: 0;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
-        font-size: 3rem;
+        font-size: 5rem;  /* Adjusted size */
     }
 
     .name-container h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;  /* Adjusted size */
     }
 
     .footer-box p {
-        font-size: 1.5rem;
+        font-size: 2rem;  /* Adjusted size */
     }
 
     .linkedin-box {
-        font-size: 1.2rem;
-        padding: 10px 25px;
+        font-size: 1.8rem;  /* Adjusted size */
+        padding: 12px 30px;  /* Adjusted padding */
     }
 }
 
 @media (max-width: 500px) {
     .name-container h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;  /* Adjusted size */
     }
 
     .name-container h2 {
-        font-size: 1.3rem;
+        font-size: 2rem;  /* Adjusted size */
     }
 
     .footer-box p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;  /* Adjusted size */
     }
 
     .about {
@@ -184,23 +187,23 @@ footer {
     }
 
     .linkedin-box {
-        font-size: 1rem;
-        padding: 8px 15px;
+        font-size: 1.5rem;  /* Adjusted size */
+        padding: 10px 20px;  /* Adjusted padding */
         width: auto;
     }
 }
 
 @media (max-width: 360px) {
     .name-container h1 {
-        font-size: 2rem;
+        font-size: 3.5rem;  /* Adjusted size */
     }
 
     .name-container h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;  /* Adjusted size */
     }
 
     .footer-box p {
-        font-size: 1.3rem;
+        font-size: 1.6rem;  /* Adjusted size */
     }
 
     .about {
