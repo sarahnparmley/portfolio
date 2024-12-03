@@ -161,6 +161,8 @@ p {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;  /* Added more space on the left */
+    padding-right: 20px; /* Added more space on the right */
 }
 
 /* Media Queries for responsiveness */
@@ -185,6 +187,8 @@ p {
     p {
         font-size: 1.6rem;  /* Adjusted paragraph font size */
         max-width: 700px;  /* Adjust max-width for smaller screens */
+        padding-left: 15px;  /* Adjust padding for smaller screens */
+        padding-right: 15px; /* Adjust padding for smaller screens */
     }
 }
 
@@ -215,6 +219,8 @@ p {
     p {
         font-size: 1.5rem;  /* Adjusted paragraph font size */
         max-width: 500px;  /* Adjust max-width for smaller screens */
+        padding-left: 20px;  /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust padding for smaller screens */
     }
 }
 
@@ -238,5 +244,7 @@ p {
     p {
         font-size: 1.4rem;  /* Adjusted paragraph font size */
         max-width: 400px;  /* Adjust max-width for smaller screens */
+        padding-left: 20px;  /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust padding for smaller screens */
     }
 }
