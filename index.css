@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     margin: 0;
     text-align: center;
-    padding-top: 120px; /* Space for the fixed header */
+    padding-top: 40px;
     position: relative;
 }
 
@@ -34,7 +34,6 @@ body::before {
     z-index: -1;
 }
 
-/* Pin the header to the top */
 header {
     width: 100%;
     display: flex;
@@ -42,13 +41,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 10px 20px;
-    position: fixed; /* Fix the header at the top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure the header stays on top */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+    position: relative;
 }
 
 .name-container h1 {
@@ -57,7 +50,6 @@ header {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0;
 }
 
 .name-container h2 {
@@ -66,11 +58,10 @@ header {
     color: #ffffff;
     margin-top: 5px;
     letter-spacing: 3px;
-    margin-bottom: 20px; /* Reduced margin bottom to make it more compact */
+    margin-bottom: 40px;
     position: relative;
 }
 
-/* Line under the title */
 .name-container h2::after {
     content: "";
     display: block;
@@ -85,8 +76,8 @@ header {
 .about {
     width: 100%;
     max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
+    margin: 40px auto;
+    padding: 20px 30px;
     text-align: center;
 }
 
@@ -95,11 +86,11 @@ header {
     font-size: 1.3rem;
     color: #ffffff;
     margin: 10px 0;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,12 +104,12 @@ footer {
     text-transform: uppercase;
     background-color: #000000;
     border: 2px solid #ffffff;
-    padding: 12px 30px;
+    padding: 10px 30px;
     border-radius: 5px;
     width: 200px;
     margin: 0 auto;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s;
     margin-bottom: 40px;
 }
 
@@ -126,7 +117,6 @@ footer {
     background-color: #0A66C2;
     color: #ffffff;
     border: 2px solid #ffffff;
-    transform: scale(1.05); /* Slight size increase on hover */
 }
 
 .linkedin-box a {
@@ -134,32 +124,35 @@ footer {
     text-decoration: none;
 }
 
+/* Footer Box Styling */
 .footer-box {
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     background-color: #ffffff;
     color: #000000;
     padding: 20px 0;
     text-align: center;
     position: relative;
-    height: 90px;
-    overflow: hidden;
+    height: 90px; /* Adjust based on your design */
+    overflow: hidden; /* Hide any overflowing text */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
+/* Normal behavior for text in footer (no animation) */
 .footer-box p {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     color: #000000;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide text that overflows */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    display: inline-block; /* Ensure the text stays in one line */
     margin: 0;
+    text-align: center; /* Center the text */
 }
 
 @media (max-width: 800px) {
@@ -171,13 +164,17 @@ footer {
         font-size: 1.5rem;
     }
 
+    .about {
+        text-align: center;
+    }
+
     .footer-box p {
-        font-size: 1.5rem; /* Adjust text size for mobile */
+        font-size: 2rem;
     }
 
     .linkedin-box {
         font-size: 1.2rem;
-        padding: 10px 25px;
+        padding: 8px 20px;
     }
 }
 
