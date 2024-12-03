@@ -14,12 +14,12 @@ body {
     line-height: 1.8;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; /* Center vertically */
     align-items: center;
     min-height: 100vh;
     margin: 0;
     text-align: center;
-    padding-top: 120px; /* Space for the fixed header */
+    padding-top: 60px; /* Adjust the padding-top to create space for header */
     position: relative;
 }
 
@@ -40,13 +40,12 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: fixed; 
+    position: relative;  /* Remove the fixed position */
     top: 0;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.6); 
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .video-container {
@@ -62,8 +61,12 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the container */
-    z-index: -1; /* Place video behind the text */
+    object-fit: cover;
+    z-index: -1;
+}
+
+.name-container {
+    margin-top: 60px; /* Adjust this to create space between header and content */
 }
 
 .name-container h1 {
@@ -73,55 +76,17 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
-    position: absolute;
-    z-index: 1;
 }
 
 .name-container h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
     color: #ffffff;
-    margin-top: 5px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    position: absolute;
-    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0 0 0;
 }
 
-/* Line under the title */
-.name-container h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 20px 0 0 0;
-}
-
-/* About section styles */
-.about {
-    width: 100%;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
-    text-align: center;
-}
-
-.about-text {
-    display: block;
-}
-
-.about p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    color: #ffffff;
-    margin: 10px 0;
-    line-height: 1.8;
-}
-
-/* Image styles */
 .about-image {
     width: 100%;
     max-width: 200px;
@@ -161,7 +126,7 @@ footer {
     background-color: #0A66C2;
     color: #ffffff;
     border: 2px solid #ffffff;
-    transform: scale(1.05); /* Slight size increase on hover */
+    transform: scale(1.05);
 }
 
 .linkedin-box a {
@@ -171,7 +136,7 @@ footer {
 
 .footer-box {
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     color: #000000;
     padding: 20px 0;
@@ -207,7 +172,7 @@ footer {
     }
 
     .footer-box p {
-        font-size: 1.5rem; /* Adjust text size for mobile */
+        font-size: 1.5rem;
     }
 
     .linkedin-box {
@@ -258,3 +223,4 @@ footer {
         width: 100%;
     }
 }
+
