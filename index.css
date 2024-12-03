@@ -1,14 +1,12 @@
-/* Reset box-model for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: 'Bebas Neue', sans-serif;
-    background-image: url('2.jpg');  /* Background image (used instead of video) */
+    background-image: url('2.jpg');  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,16 +14,15 @@ body {
     line-height: 1.8;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
+    justify-content: center; 
     align-items: center;
     min-height: 100vh;
     margin: 0;
     text-align: center;
-    padding-top: 30px; /* Reduced space above name */
+    padding-top: 20px; 
     position: relative;
 }
 
-/* Dark overlay for body background */
 body::before {
     content: '';
     position: absolute;
@@ -37,7 +34,6 @@ body::before {
     z-index: -1;
 }
 
-/* Header styles */
 header {
     width: 100%;
     display: flex;
@@ -48,13 +44,12 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8); /* Reduced transparency */
-    box-shadow: none; /* Removed shadow */
+    background-color: transparent; 
+    box-shadow: none; 
 }
 
-/* Name container styling */
 .name-container {
-    margin-top: 30px; /* Reduced this value to decrease space above name */
+    margin-top: 20px; 
 }
 
 .name-container h1 {
@@ -72,12 +67,11 @@ header {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 10px 0 0 0;
-    border-bottom: 2px solid #ffffff; /* Line under "Graphic Designer" */
-    padding-bottom: 5px; /* Optional: space between text and line */
+    margin: 20px 0;
+    border-bottom: 5px solid #ffffff; 
+    padding-bottom: 0px; 
 }
 
-/* About image styling */
 .about-image {
     width: 100%;
     max-width: 200px;
@@ -88,7 +82,6 @@ header {
     margin-right: auto;
 }
 
-/* Footer and LinkedIn styles */
 footer {
     margin-top: 40px;
     display: flex;
@@ -153,7 +146,6 @@ footer {
     margin: 0;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
