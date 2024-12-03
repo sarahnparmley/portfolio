@@ -1,12 +1,14 @@
+/* Reset box-model for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     font-family: 'Bebas Neue', sans-serif;
-    background-image: url('2.jpg');
+    background-image: url('2.jpg');  /* Background image (used instead of video) */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,10 +21,11 @@ body {
     min-height: 100vh;
     margin: 0;
     text-align: center;
-    padding-top: 60px; /* Adjust the padding-top to create space for header */
+    padding-top: 30px; /* Reduced space above name */
     position: relative;
 }
 
+/* Dark overlay for body background */
 body::before {
     content: '';
     position: absolute;
@@ -34,39 +37,24 @@ body::before {
     z-index: -1;
 }
 
+/* Header styles */
 header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;  /* Remove the fixed position */
+    position: relative;
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.6); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); /* Reduced transparency */
+    box-shadow: none; /* Removed shadow */
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 300px; 
-    overflow: hidden;
-}
-
-.header-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
+/* Name container styling */
 .name-container {
-    margin-top: 60px; /* Adjust this to create space between header and content */
+    margin-top: 30px; /* Reduced this value to decrease space above name */
 }
 
 .name-container h1 {
@@ -85,8 +73,11 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 10px 0 0 0;
+    border-bottom: 2px solid #ffffff; /* Line under "Graphic Designer" */
+    padding-bottom: 5px; /* Optional: space between text and line */
 }
 
+/* About image styling */
 .about-image {
     width: 100%;
     max-width: 200px;
@@ -162,6 +153,7 @@ footer {
     margin: 0;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
         font-size: 3rem;
@@ -223,4 +215,3 @@ footer {
         width: 100%;
     }
 }
-
