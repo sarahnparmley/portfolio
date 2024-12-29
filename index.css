@@ -36,6 +36,7 @@ body::before {
     z-index: -1;
 }
 
+/* Header styles */
 header {
     width: 100%;
     display: flex;
@@ -46,19 +47,38 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: transparent; 
-    box-shadow: none; 
+    background-color: transparent;
+    box-shadow: none;
     max-width: 1200px;  /* Set a max-width for header */
     margin: 0 auto;  /* Center-align the header */
+    padding: 20px 0;
 }
 
+/* Logo Container */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;  /* Space between the logo and the name */
+}
+
+/* Logo Image */
+.header-logo {
+    max-width: 100%;
+    width: 250px;  /* Adjust the width as needed */
+    height: auto;
+    object-fit: contain;  /* Ensures logo fits without distortion */
+}
+
+/* Name and Role Styling */
 .name-container {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .name-container h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 6rem;  /* Increased font size */
+    font-size: 6rem;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -67,181 +87,117 @@ header {
 
 .name-container h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;  /* Increased font size */
+    font-size: 3rem;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0px 0;
-    border-bottom: 5px solid #ffffff; 
+    border-bottom: 5px solid #ffffff;
     padding-bottom: 40px;
 }
 
-/* Image styling */
-.about-image {
-    width: 100%;
-    max-width: 600px;  /* Doubled the image size */
-    margin-top: 20px;
-    border-radius: 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-footer {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.linkedin-box {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #ffffff;
-    font-size: 2rem;  /* Increased font size */
-    text-transform: uppercase;
-    background-color: #000000;
-    border: 2px solid #ffffff;
-    padding: 12px 30px;
-    border-radius: 5px;
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    transition: all 0.3s ease;
-    margin-bottom: 40px;
-}
-
-.linkedin-box:hover {
-    background-color: #0A66C2;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    transform: scale(1.05);
-}
-
-.linkedin-box a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-box {
-    width: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    height: 90px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-box p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;  /* Increased font size */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #000000;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    margin: 0;
-}
-
-/* Paragraph text now matches header width */
+/* Paragraph Text Styling */
 p {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
     color: #ffffff;
     line-height: 1.8;
     margin: 40px 0;
-    max-width: 1000px;  
+    max-width: 1000px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;  /* Added more space on the left */
-    padding-right: 30px; /* Added more space on the right */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
-        font-size: 4.5rem;  /* Slightly reduced size */
+        font-size: 4.5rem;
     }
 
     .name-container h2 {
-        font-size: 2rem;  /* Adjusted size */
+        font-size: 2rem;
     }
 
     .footer-box p {
-        font-size: 1.8rem;  /* Adjusted size */
+        font-size: 1.8rem;
     }
 
     .linkedin-box {
-        font-size: 1.8rem;  /* Adjusted size */
+        font-size: 1.8rem;
         padding: 12px 30px;
     }
 
     p {
-        font-size: 1.6rem;  /* Adjusted paragraph font size */
-        max-width: 700px;  /* Adjust max-width for smaller screens */
-        padding-left: 15px;  /* Adjust padding for smaller screens */
-        padding-right: 15px; /* Adjust padding for smaller screens */
+        font-size: 1.6rem;
+        max-width: 700px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-logo {
+        width: 200px;  /* Adjust logo size on smaller screens */
     }
 }
 
 @media (max-width: 500px) {
     .name-container h1 {
-        font-size: 3.5rem;  /* Reduced size */
+        font-size: 3.5rem;
     }
 
     .name-container h2 {
-        font-size: 1.8rem;  /* Adjusted size */
+        font-size: 1.8rem;
     }
 
     .footer-box p {
-        font-size: 1.6rem;  /* Adjusted size */
+        font-size: 1.6rem;
     }
 
     .linkedin-box {
-        font-size: 1.5rem;  /* Reduced size */
+        font-size: 1.5rem;
         padding: 10px 20px;
         width: auto;
     }
 
     p {
-        font-size: 1.4rem;  /* Adjusted paragraph font size */
-        max-width: 400px;  /* Adjust max-width for smaller screens */
-        padding-left: 20px;  /* Adjust padding for smaller screens */
-        padding-right: 20px; /* Adjust padding for smaller screens */
+        font-size: 1.4rem;
+        max-width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-logo {
+        width: 150px;  /* Further adjust logo size */
     }
 }
 
 @media (max-width: 360px) {
     .name-container h1 {
-        font-size: 3rem;  /* Further reduced size */
+        font-size: 3rem;
     }
 
     .name-container h2 {
-        font-size: 1.6rem;  /* Further reduced size */
+        font-size: 1.6rem;
     }
 
     .footer-box p {
-        font-size: 1.4rem;  /* Adjusted size */
+        font-size: 1.4rem;
     }
 
     .linkedin-box {
-        font-size: 1.4rem;  /* Reduced size */
+        font-size: 1.4rem;
         padding: 8px 15px;
     }
 
     p {
-        font-size: 1.2rem;  /* Adjusted paragraph font size */
-        max-width: 360px;  /* Adjust max-width for very small screens */
-        padding-left: 15px;  /* Adjust padding for very small screens */
-        padding-right: 15px; /* Adjust padding for very small screens */
+        font-size: 1.2rem;
+        max-width: 360px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-logo {
+        width: 120px;  /* Further adjust logo size for small screens */
     }
 }
