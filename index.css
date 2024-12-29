@@ -169,15 +169,15 @@ p {
 /* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .name-container h1 {
-        font-size: 5rem;  /* Adjusted size */
+        font-size: 4.5rem;  /* Slightly reduced size */
     }
 
     .name-container h2 {
-        font-size: 2.5rem;  /* Adjusted size */
+        font-size: 2rem;  /* Adjusted size */
     }
 
     .footer-box p {
-        font-size: 2rem;  /* Adjusted size */
+        font-size: 1.8rem;  /* Adjusted size */
     }
 
     .linkedin-box {
@@ -195,39 +195,7 @@ p {
 
 @media (max-width: 500px) {
     .name-container h1 {
-        font-size: 4rem;  /* Adjusted size */
-    }
-
-    .name-container h2 {
-        font-size: 2rem;  /* Adjusted size */
-    }
-
-    .footer-box p {
-        font-size: 1.8rem;  /* Adjusted size */
-    }
-
-    .about {
-        width: 100%;
-        height: auto;
-    }
-
-    .linkedin-box {
-        font-size: 1.5rem;  /* Adjusted size */
-        padding: 10px 20px;
-        width: auto;
-    }
-
-    p {
-        font-size: 1.5rem;  /* Adjusted paragraph font size */
-        max-width: 500px;  /* Adjust max-width for smaller screens */
-        padding-left: 20px;  /* Adjust padding for smaller screens */
-        padding-right: 20px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media (max-width: 360px) {
-    .name-container h1 {
-        font-size: 3.5rem;  /* Adjusted size */
+        font-size: 3.5rem;  /* Reduced size */
     }
 
     .name-container h2 {
@@ -238,8 +206,10 @@ p {
         font-size: 1.6rem;  /* Adjusted size */
     }
 
-    .about {
-        width: 100%;
+    .linkedin-box {
+        font-size: 1.5rem;  /* Reduced size */
+        padding: 10px 20px;
+        width: auto;
     }
 
     p {
@@ -247,5 +217,31 @@ p {
         max-width: 400px;  /* Adjust max-width for smaller screens */
         padding-left: 20px;  /* Adjust padding for smaller screens */
         padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .name-container h1 {
+        font-size: 3rem;  /* Further reduced size */
+    }
+
+    .name-container h2 {
+        font-size: 1.6rem;  /* Further reduced size */
+    }
+
+    .footer-box p {
+        font-size: 1.4rem;  /* Adjusted size */
+    }
+
+    .linkedin-box {
+        font-size: 1.4rem;  /* Reduced size */
+        padding: 8px 15px;
+    }
+
+    p {
+        font-size: 1.2rem;  /* Adjusted paragraph font size */
+        max-width: 360px;  /* Adjust max-width for very small screens */
+        padding-left: 15px;  /* Adjust padding for very small screens */
+        padding-right: 15px; /* Adjust padding for very small screens */
     }
 }
