@@ -63,12 +63,11 @@ header {
 /* Navigation Bar Styles */
 .navbar {
     display: flex;
-    flex-direction: row;  /* Align items horizontally */
+    flex-direction: column;  /* Stack items vertically */
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0; /* Remove margin to make everything aligned */
-    position: relative; /* Needed to position the line correctly */
 }
 
 /* Left Navigation and Right Navigation */
@@ -102,8 +101,13 @@ header {
     border: none; /* Remove border */
 }
 
-/* Line under the navbar (adjusted to span the width of navbar and logo) */
-.navbar::after {
+/* Line under the navigation tabs */
+.navbar .nav-list {
+    position: relative; /* This allows us to position the line */
+}
+
+/* Line under the navigation tabs */
+.navbar .nav-list::after {
     content: '';
     display: block;
     width: 80%;  /* Make the line span 80% of the navbar width, adjust as needed */
