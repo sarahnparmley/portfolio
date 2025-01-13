@@ -40,7 +40,7 @@ body::before {
 header {
     width: 100%;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -57,6 +57,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 0 20px;
+    border-bottom: 2px solid #ffffff; /* Line under the navbar */
 }
 
 /* Left Navigation */
@@ -67,24 +68,23 @@ header {
 }
 
 .nav-list li {
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 .nav-list a {
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.5rem; /* Increased font size for tabs */
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 10px 20px;
-    border: 2px solid transparent;
     transition: all 0.3s ease;
 }
 
 .nav-list a:hover {
     color: #0A66C2;
-    border-color: #ffffff;
+    border-bottom: 2px solid #0A66C2; /* Underline effect */
 }
 
 /* Logo Container */
@@ -102,31 +102,6 @@ header {
     width: 250px;
     height: auto;
     object-fit: contain;
-}
-
-/* Name and Role Styling */
-.name-container {
-    margin-top: 20px;
-}
-
-.name-container h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 6rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0;
-}
-
-.name-container h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0px 0;
-    border-bottom: 5px solid #ffffff;
-    padding-bottom: 40px;
 }
 
 /* About Section Styling */
@@ -203,55 +178,31 @@ p {
 
 /* Media Queries for responsiveness */
 @media (max-width: 800px) {
-    .name-container h1 {
-        font-size: 4.5rem;
+    .navbar {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .name-container h2 {
-        font-size: 2rem;
+    .nav-list li {
+        margin: 10px 0;
     }
 
-    .footer-box p {
-        font-size: 1.8rem;
-    }
-
-    .linkedin-box {
-        font-size: 1.8rem;
-        padding: 12px 30px;
-    }
-
-    p {
-        font-size: 1.6rem;
-        max-width: 700px;
-        padding-left: 15px;
-        padding-right: 15px;
+    .nav-list a {
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     .header-logo {
         width: 200px;  /* Adjust logo size on smaller screens */
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-nav, .right-nav {
-        margin: 10px 0;
+    .footer-box p {
+        font-size: 1.8rem;
     }
 }
 
 @media (max-width: 500px) {
-    .name-container h1 {
-        font-size: 3.5rem;
-    }
-
-    .name-container h2 {
-        font-size: 1.8rem;
-    }
-
-    .navbar {
-        padding: 10px;
+    .nav-list a {
+        font-size: 1.8rem; /* Further adjust font size */
     }
 
     .footer-box p {
@@ -277,12 +228,8 @@ p {
 }
 
 @media (max-width: 360px) {
-    .name-container h1 {
-        font-size: 3rem;
-    }
-
-    .name-container h2 {
-        font-size: 1.6rem;
+    .nav-list a {
+        font-size: 1.6rem; /* Adjust for very small screens */
     }
 
     .footer-box p {
