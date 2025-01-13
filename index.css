@@ -43,10 +43,27 @@ header {
     padding: 40px 0; /* Adjust padding for spacing */
 }
 
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* Adjust width of logo container */
+    margin-bottom: 20px; /* Space between logo and navbar */
+}
+
+/* Logo Image */
+.header-logo {
+    max-width: 100%;
+    width: 350px; /* Increased logo size */
+    height: auto;
+    object-fit: contain;
+}
+
 /* Navigation Bar Styles */
 .navbar {
     display: flex;
-    flex-direction: column;  /* Change to column layout */
+    flex-direction: column;  /* Stack items vertically */
     align-items: center;
     width: 100%;
 }
@@ -91,23 +108,6 @@ header {
     margin-top: 20px; /* Space between navbar items and the line */
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Logo Container */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px; /* Adjust width of logo container */
-    margin-bottom: 20px; /* Space between logo and navbar */
-}
-
-/* Logo Image */
-.header-logo {
-    max-width: 100%;
-    width: 350px; /* Increased logo size */
-    height: auto;
-    object-fit: contain;
 }
 
 /* About Section Styling */
