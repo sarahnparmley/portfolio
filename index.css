@@ -63,23 +63,25 @@ header {
 /* Navigation Bar Styles */
 .navbar {
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
+    flex-direction: row;  /* Align items horizontally */
+    justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0; /* Remove margin to make everything aligned */
 }
 
-/* Left Navigation */
+/* Left Navigation and Right Navigation */
 .left-nav,
 .right-nav {
     display: flex;
     list-style: none;
     justify-content: center;  /* Center items horizontally */
-    width: 100%;
+    width: auto;  /* Allow width to be auto */
     margin: 0; /* Remove margin to make everything aligned */
 }
 
 .nav-list li {
-    margin: 0 25px;
+    margin: 0 25px;  /* Space between list items */
 }
 
 .nav-list a {
@@ -93,21 +95,20 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Remove underline on hover */
 .nav-list a:hover {
-    color: #0A66C2;
-    border-bottom: 2px solid #0A66C2; /* Underline effect */
+    color: #0A66C2; /* Change text color */
+    border: none; /* Remove border */
 }
 
 /* Line under the navbar (adjusted to span the width of navbar and logo) */
 .navbar::after {
     content: '';
     display: block;
-    width: 60%; /* Adjusted width for line */
+    width: 100%;  /* Make the line span the entire width of the navbar */
     height: 4px; /* Make the line thicker */
     background-color: #ffffff;
     margin-top: 20px; /* Space between navbar items and the line */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* About Section Styling */
