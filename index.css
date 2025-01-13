@@ -40,7 +40,7 @@ header {
     z-index: 1000;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 0; /* Adjust padding for spacing */
+    padding: 40px 0;
 }
 
 /* Logo Container */
@@ -48,14 +48,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px; /* Adjust width of logo container */
-    margin-bottom: 20px; /* Space between logo and navbar */
+    width: 250px;
+    margin-bottom: 20px;
 }
 
 /* Logo Image */
 .header-logo {
     max-width: 100%;
-    width: 350px; /* Increased logo size */
+    width: 350px;
     height: auto;
     object-fit: contain;
 }
@@ -63,11 +63,11 @@ header {
 /* Navigation Bar Styles */
 .navbar {
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0; /* Remove margin to make everything aligned */
+    width: 100%;  /* Make sure navbar takes up full width */
+    margin: 0;
+    flex-wrap: wrap;
 }
 
 /* Left Navigation and Right Navigation */
@@ -75,9 +75,9 @@ header {
 .right-nav {
     display: flex;
     list-style: none;
-    justify-content: center;  /* Center items horizontally */
-    width: auto;  /* Allow width to be auto */
-    margin: 0; /* Remove margin to make everything aligned */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-list li {
@@ -87,7 +87,7 @@ header {
 .nav-list a {
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem; /* Increased font size for tabs */
+    font-size: 2.5rem;  /* Increased font size for tabs */
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -95,25 +95,23 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Remove underline on hover */
 .nav-list a:hover {
-    color: #0A66C2; /* Change text color */
-    border: none; /* Remove border */
+    color: #0A66C2;
+    border: none;  /* Remove any border under hover */
 }
 
-/* Line under the navigation tabs */
-.navbar .nav-list {
-    position: relative; /* This allows us to position the line */
+/* Adding line under navigation */
+.navbar {
+    position: relative;
 }
 
-/* Line under the navigation tabs */
-.navbar .nav-list::after {
+.navbar::after {
     content: '';
     display: block;
-    width: 80%;  /* Make the line span 80% of the navbar width, adjust as needed */
-    height: 4px; /* Make the line thicker */
+    width: 60%; /* Adjust width of the line */
+    height: 4px;  /* Thickness of the line */
     background-color: #ffffff;
-    margin-top: 20px; /* Space between navbar items and the line */
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
