@@ -95,9 +95,10 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Remove hover effect color change */
 .nav-list a:hover {
-    color: #ff0000;  /* Red color on hover */
-    border: none;    /* Remove any border on hover */
+    color: inherit;  /* No color change on hover */
+    border: none;
 }
 
 /* Adding line under navigation */
@@ -120,7 +121,7 @@ header {
 section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: transparent; /* Transparent background for sections */
     margin-top: 20px;
 }
 
@@ -159,7 +160,7 @@ section p {
     margin: 0 auto;
     text-align: center;
     transition: all 0.3s ease;
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .linkedin-box:hover {
