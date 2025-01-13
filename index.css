@@ -54,21 +54,62 @@ header {
     padding: 20px 0;
 }
 
-/* Logo Container */
-.logo-container {
+/* Navigation Bar Styles */
+.navbar {
     width: 100%;
+    position: absolute;
+    top: 10px;  /* Adjust position from top */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;  /* Space between the logo and the name */
+    background-color: transparent;
+    z-index: 9999;
 }
 
-/* Logo Image */
-.header-logo {
-    max-width: 100%;
-    width: 250px;  /* Adjust the width as needed */
-    height: auto;
-    object-fit: contain;  /* Ensures logo fits without distortion */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;  /* Space between tabs */
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #0A66C2;
+    border-color: #ffffff;
+}
+
+/* Left Navigation (Home and Work) */
+.left-nav {
+    margin-right: auto; /* Push to the left side */
+}
+
+/* Right Navigation (About and Contact) */
+.right-nav {
+    margin-left: auto; /* Push to the right side */
+}
+
+/* Logo Container */
+.logo-container {
+    width: 200px; /* Adjust logo size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Name and Role Styling */
