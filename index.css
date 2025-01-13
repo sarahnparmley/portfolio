@@ -42,7 +42,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     position: relative;
     top: 0;
     left: 0;
@@ -66,6 +65,7 @@ header {
     z-index: 9999;
 }
 
+/* Navigation list styles */
 .nav-list {
     display: flex;
     list-style: none;
@@ -240,63 +240,4 @@ p {
     }
 }
 
-@media (max-width: 500px) {
-    .name-container h1 {
-        font-size: 3.5rem;
-    }
-
-    .name-container h2 {
-        font-size: 1.8rem;
-    }
-
-    .footer-box p {
-        font-size: 1.6rem;
-    }
-
-    .linkedin-box {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-        width: auto;
-    }
-
-    p {
-        font-size: 1.4rem;
-        max-width: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .header-logo {
-        width: 150px;  /* Further adjust logo size */
-    }
-}
-
-@media (max-width: 360px) {
-    .name-container h1 {
-        font-size: 3rem;
-    }
-
-    .name-container h2 {
-        font-size: 1.6rem;
-    }
-
-    .footer-box p {
-        font-size: 1.4rem;
-    }
-
-    .linkedin-box {
-        font-size: 1.4rem;
-        padding: 8px 15px;
-    }
-
-    p {
-        font-size: 1.2rem;
-        max-width: 360px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .header-logo {
-        width: 120px;  /* Further adjust logo size for small screens */
-    }
-}
+@media (max-width
