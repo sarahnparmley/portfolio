@@ -68,6 +68,7 @@ header {
     align-items: center;
     width: 100%;
     margin: 0; /* Remove margin to make everything aligned */
+    position: relative; /* Needed to position the line correctly */
 }
 
 /* Left Navigation and Right Navigation */
@@ -105,10 +106,12 @@ header {
 .navbar::after {
     content: '';
     display: block;
-    width: 100%;  /* Make the line span the entire width of the navbar */
+    width: 80%;  /* Make the line span 80% of the navbar width, adjust as needed */
     height: 4px; /* Make the line thicker */
     background-color: #ffffff;
     margin-top: 20px; /* Space between navbar items and the line */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* About Section Styling */
