@@ -96,7 +96,7 @@ header {
 }
 
 .nav-list a:hover {
-    color: #0A66C2;
+    color: #ff0000;
     border: none;  /* Remove any border under hover */
 }
 
