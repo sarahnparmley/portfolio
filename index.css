@@ -8,7 +8,7 @@
 /* Body styles */
 body {
     font-family: 'Bebas Neue', sans-serif;
-    background-image: url('2.jpg');  
+    background-image: url('2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,12 +16,12 @@ body {
     line-height: 1.8;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     text-align: center;
-    padding-top: 20px; 
+    padding-top: 20px;
     position: relative;
 }
 
@@ -43,44 +43,36 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 0;
-    left: 0;
     z-index: 1000;
-    background-color: transparent;
-    box-shadow: none;
-    max-width: 1200px;  /* Set a max-width for header */
-    margin: 0 auto;  /* Center-align the header */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px 0;
 }
 
 /* Navigation Bar Styles */
 .navbar {
-    width: 100%;
-    position: absolute;
-    top: 10px;  /* Adjust position from top */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    z-index: 9999;
+    width: 100%;
+    padding: 0 20px;
 }
 
-/* Navigation list styles */
-.nav-list {
+/* Left Navigation */
+.left-nav,
+.right-nav {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-list li {
-    margin: 0 15px;  /* Space between tabs */
+    margin: 0 15px;
 }
 
 .nav-list a {
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -94,22 +86,20 @@ header {
     border-color: #ffffff;
 }
 
-/* Left Navigation (Home and Work) */
-.left-nav {
-    margin-right: auto; /* Push to the left side */
-}
-
-/* Right Navigation (About and Contact) */
-.right-nav {
-    margin-left: auto; /* Push to the right side */
-}
-
 /* Logo Container */
 .logo-container {
-    width: 200px; /* Adjust logo size */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
+}
+
+/* Logo Image */
+.header-logo {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Name and Role Styling */
@@ -238,6 +228,15 @@ p {
     .header-logo {
         width: 200px;  /* Adjust logo size on smaller screens */
     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-nav, .right-nav {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -249,54 +248,19 @@ p {
         font-size: 1.8rem;
     }
 
-    .footer-box p {
-        font-size: 1.6rem;
+    .navbar {
+        padding: 10px;
     }
 
-    .linkedin-box {
+    .logo-container {
+        margin: 20px 0;
+    }
+
+    .footer-box p {
         font-size: 1.5rem;
-        padding: 10px 20px;
-        width: auto;
-    }
-
-    p {
-        font-size: 1.4rem;
-        max-width: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .header-logo {
-        width: 150px;  /* Further adjust logo size */
-    }
-}
-
-@media (max-width: 360px) {
-    .name-container h1 {
-        font-size: 3rem;
-    }
-
-    .name-container h2 {
-        font-size: 1.6rem;
-    }
-
-    .footer-box p {
-        font-size: 1.4rem;
     }
 
     .linkedin-box {
-        font-size: 1.4rem;
-        padding: 8px 15px;
-    }
-
-    p {
-        font-size: 1.2rem;
-        max-width: 360px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .header-logo {
-        width: 120px;  /* Further adjust logo size for small screens */
+        font-size: 1.6rem;
     }
 }
