@@ -57,7 +57,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 0 20px;
-    border-bottom: 2px solid #ffffff; /* Line under the navbar */
+    margin-top: 50px; /* Move the line farther down */
 }
 
 /* Left Navigation */
@@ -85,6 +85,18 @@ header {
 .nav-list a:hover {
     color: #0A66C2;
     border-bottom: 2px solid #0A66C2; /* Underline effect */
+}
+
+/* Line under the navbar (adjusted to not full width and thicker) */
+.navbar::after {
+    content: '';
+    display: block;
+    width: 60%; /* Line width reduced to 60% of navbar */
+    height: 4px; /* Make the line thicker */
+    background-color: #ffffff;
+    margin-top: 20px; /* Space between the tabs and the line */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Logo Container */
