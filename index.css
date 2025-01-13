@@ -65,7 +65,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;  /* Make sure navbar takes up full width */
+    width: 100%;
     margin: 0;
     flex-wrap: wrap;
 }
@@ -96,8 +96,8 @@ header {
 }
 
 .nav-list a:hover {
-    color: #ff0000;
-    border: none;  /* Remove any border under hover */
+    color: #ff0000;  /* Red color on hover */
+    border: none;    /* Remove any border on hover */
 }
 
 /* Adding line under navigation */
@@ -116,18 +116,33 @@ header {
     margin-right: auto;
 }
 
-/* About Section Styling */
-p {
+/* Section styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+section p {
     font-size: 1.5rem;
     color: #ffffff;
-    line-height: 1.8;
-    margin: 40px 0;
-    max-width: 1000px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Adding space between sections */
+#home, #work, #about, #contact {
+    margin-top: 60px;
 }
 
 /* LinkedIn Box Styling */
