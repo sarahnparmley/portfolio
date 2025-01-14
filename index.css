@@ -38,8 +38,8 @@ header {
     top: 0;
     position: sticky;
     z-index: 1000;
-    padding: 10px 0;
     background-color: black;
+    border-bottom: white;
 }
 
 /* Logo Container */
