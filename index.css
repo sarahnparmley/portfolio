@@ -237,3 +237,49 @@ section p {
     }
 
     .footer-box p {
+        font-size: 1.6rem;
+    }
+
+    .linkedin-box {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        width: auto;
+    }
+
+    p {
+        font-size: 1.4rem;
+        max-width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-list a {
+        font-size: 1.6rem; /* Adjust for very small screens */
+    }
+
+    .footer-box p {
+        font-size: 1.4rem;
+    }
+
+    .linkedin-box {
+        font-size: 1.4rem;
+        padding: 8px 15px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 360px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-logo {
+        width: 120px;
+    }
+}
