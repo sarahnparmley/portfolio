@@ -40,7 +40,7 @@ header {
     z-index: 1000;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0; /* Reduced padding for less space */
+    padding: 40px 0;
 }
 
 /* Logo Container */
@@ -101,20 +101,38 @@ header {
     border: none;
 }
 
+/* Removing line under the navigation */
+.navbar {
+    position: relative;
+}
+
 /* Section styling */
 section {
-    padding: 40px 20px;  /* Reduced padding between sections */
+    padding: 40px 20px;
     text-align: center;
     background-color: transparent;
+    margin-top: 20px;
 }
 
-/* Space between sections */
-#home {
-    margin-bottom: 20px; /* Reduced space between header and home section */
+section h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
-#work {
-    margin-top: 40px; /* Reduced space between home and work sections */
+section p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Adding space between sections */
+#home, #work, #about, #contact {
+    margin-top: 40px;
 }
 
 /* LinkedIn Box Styling */
@@ -177,12 +195,16 @@ section {
 
 /* Styling for the work image */
 .work-image {
-    width: 100%;
-    max-width: 900px; /* Adjust the max-width as needed */
-    height: auto;
+    width: 100%; /* Makes the image span the whole width */
+    height: auto; /* Maintains aspect ratio */
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    padding-top: 20px; /* Add some space at the top if necessary */
+    margin: 0 auto; /* Centers the image horizontally */
+    padding-top: 10px; /* Optional: Adjust padding for spacing */
+}
+
+/* Specific styling for Home section image */
+#home .work-image {
+    width: 100%; /* Makes the image span the entire width in Home section */
 }
 
 /* Media Queries for responsiveness */
@@ -215,49 +237,3 @@ section {
     }
 
     .footer-box p {
-        font-size: 1.6rem;
-    }
-
-    .linkedin-box {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-        width: auto;
-    }
-
-    p {
-        font-size: 1.4rem;
-        max-width: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .header-logo {
-        width: 150px;
-    }
-}
-
-@media (max-width: 360px) {
-    .nav-list a {
-        font-size: 1.6rem; /* Adjust for very small screens */
-    }
-
-    .footer-box p {
-        font-size: 1.4rem;
-    }
-
-    .linkedin-box {
-        font-size: 1.4rem;
-        padding: 8px 15px;
-    }
-
-    p {
-        font-size: 1.2rem;
-        max-width: 360px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .header-logo {
-        width: 120px;
-    }
-}
