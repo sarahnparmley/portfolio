@@ -204,6 +204,16 @@ section p {
     margin: 0;
 }
 
+/* Styling for the work image */
+.work-image {
+    width: 100%;
+    max-width: 900px; /* Adjust the max-width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    padding-top: 20px; /* Add some space at the top if necessary */
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .navbar {
