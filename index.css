@@ -60,19 +60,20 @@ header {
     object-fit: contain;
 }
 
-/* Navigation Bar Styles (Sticky Navbar) */
+/* Navigation Bar Styles */
 .navbar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;         /* For modern browsers */
+    top: 0;                   /* Stick at the top */
+    z-index: 1000;            /* Make sure it's above other content */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0;
     flex-wrap: wrap;
-    position: sticky;  /* Make navbar sticky */
-    top: 0;  /* Stick it to the top */
-    z-index: 1000;  /* Ensure it's above other content */
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background to make text readable when scrolling */
-    padding: 10px 0;  /* Optional: Add some padding for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: for transparency effect */
+    padding: 10px 0; /* Optional: space around the tabs */
 }
 
 /* Left Navigation and Right Navigation */
@@ -107,10 +108,6 @@ header {
 }
 
 /* Adding line under navigation */
-.navbar {
-    position: relative;
-}
-
 .navbar::after {
     content: '';
     display: block;
