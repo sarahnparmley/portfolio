@@ -39,6 +39,7 @@ header {
     position: sticky;
     z-index: 1000;
     padding: 10px 0;
+    background: black;
 }
 
 /* Logo Container */
