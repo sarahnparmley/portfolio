@@ -60,7 +60,7 @@ header {
     object-fit: contain;
 }
 
-/* Navigation Bar Styles */
+/* Navigation Bar Styles (Sticky Navbar) */
 .navbar {
     display: flex;
     justify-content: center;
@@ -68,6 +68,11 @@ header {
     width: 100%;
     margin: 0;
     flex-wrap: wrap;
+    position: sticky;  /* Make navbar sticky */
+    top: 0;  /* Stick it to the top */
+    z-index: 1000;  /* Ensure it's above other content */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background to make text readable when scrolling */
+    padding: 10px 0;  /* Optional: Add some padding for spacing */
 }
 
 /* Left Navigation and Right Navigation */
