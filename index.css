@@ -2,7 +2,7 @@
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-image: url('2.jpg');
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
