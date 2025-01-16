@@ -138,13 +138,13 @@ section p {
 .linkedin-box {
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     background-color: #000000;
     border: 2px solid #ffffff;
     padding: 12px 30px;
     border-radius: 5px;
-    width: 200px;
+    width: 100px;
     margin: 0 auto;
     text-align: center;
     transition: all 0.3s ease;
@@ -165,11 +165,11 @@ section p {
 
 /* Footer Box Styling */
 .footer-box {
-    width: 100%;
+    width: 100vw;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     color: #000000;
-    padding: 20px 0;
+    padding: 0px 0px;
     text-align: center;
     position: relative;
     height: 90px;
