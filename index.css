@@ -97,7 +97,7 @@ header {
 
 /* Remove hover color change for tabs */
 .nav-list a:hover {
-    color: inherit;
+    color: white;
     border: none;
 }
 
