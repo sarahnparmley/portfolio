@@ -1,162 +1,43 @@
-/* Body styles */
+/* General Styles */
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat;
-    color: #black;
-    line-height: 1.8;
+    color: white;
+    text-align: center;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    text-align: center;
     padding-top: 20px;
-    position: relative;
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
-/* Header styles */
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    position: sticky;
-    z-index: 1000;
-    background-color: black;
-    border-bottom: white;
-    background: rgba(0, 0, 0, 0.75);
-}
-
-/* Logo Container */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-/* Logo Image */
-.header-logo {
-    max-width: 100%;
-    width: 350px;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Navigation Bar Styles */
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    flex-wrap: wrap;
-}
-
-/* Left Navigation and Right Navigation */
-.left-nav,
-.right-nav {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-list li {
-    margin: 0 25px;  /* Space between list items */
-}
-
-.nav-list a {
-    text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;  /* Increased font size for tabs */
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-/* Remove hover color change for tabs */
-.nav-list a:hover {
-    color: white;
-    border: none;
-}
-
-/* Removing line under the navigation */
-.navbar {
-    position: relative;
-}
-
-/* Section styling */
 section {
-    padding-top: 170px;
-    text-align: center;
-    background-color: transparent;
     margin-top: 20px;
-}
-
-section h2 {
-    font-size: 3rem;
-    color: #ffffff;
-    margin-bottom: 20px;
+    max-width: 900px;
 }
 
 section p {
     font-size: 1.5rem;
-    color: #ffffff;
     line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* Adding space between sections */
-#home, #work, #about, #contact {
-    margin-top: 40px;
+    margin: 10px 0;
 }
 
 /* LinkedIn Box Styling */
 .linkedin-box {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #ffffff;
     font-size: 1.5rem;
     text-transform: uppercase;
-    background-color: #000000;
-    border: 2px solid #ffffff;
+    background-color: black;
+    border: 2px solid white;
     padding: 12px 30px;
     border-radius: 5px;
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    transition: all 0.3s ease;
     margin-top: 20px;
-    margin-bottom: 60px;
+    transition: all 0.3s ease;
 }
 
 .linkedin-box:hover {
     background-color: #0A66C2;
-    color: #ffffff;
-    border: 2px solid #ffffff;
     transform: scale(1.05);
 }
 
@@ -165,122 +46,15 @@ section p {
     text-decoration: none;
 }
 
-/* Footer Box Styling */
-.footer-box {
-    width: 100vw;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    color: #000000;
-    padding: 0px 0px;
-    text-align: center;
-    position: relative;
-    height: 90px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-box p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #000000;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    margin: 0;
-}
-
-/* Styling for the work image */
-.work-image {
-    width: 100%; /* Makes the image span the whole width */
-    height: auto; /* Maintains aspect ratio */
-    display: block;
-    margin: 0 auto; /* Centers the image horizontally */
-    padding-top: 10px; /* Optional: Adjust padding for spacing */
-}
-
-/* Specific styling for Home section image */
-#home .work-image {
-    width: 100%; /* Makes the image span the entire width in Home section */
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .nav-list a {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-    }
-
-    .header-logo {
-        width: 250px;  /* Adjust logo size on smaller screens */
-    }
-
-    .footer-box p {
-        font-size: 1.8rem;
-    }
-}
-
+/* Responsive Design */
 @media (max-width: 500px) {
-    .nav-list a {
-        font-size: 1.8rem; /* Further adjust font size */
-    }
-
-    .footer-box p {
-        font-size: 1.6rem;
+    section p {
+        font-size: 1.4rem;
+        padding: 0 20px;
     }
 
     .linkedin-box {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 10px 20px;
-        width: auto;
-    }
-
-    p {
-        font-size: 1.4rem;
-        max-width: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .header-logo {
-        width: 150px;
-    }
-}
-
-@media (max-width: 360px) {
-    .nav-list a {
-        font-size: 1.6rem; /* Adjust for very small screens */
-    }
-
-    .footer-box p {
-        font-size: 1.4rem;
-    }
-
-    .linkedin-box {
-        font-size: 1.4rem;
-        padding: 8px 15px;
-    }
-
-    p {
-        font-size: 1.2rem;
-        max-width: 360px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .header-logo {
-        width: 120px;
     }
 }
