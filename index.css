@@ -12,24 +12,28 @@ body {
     position: relative;
 }
 
-/* Name at the top-center */
-.top-center-name {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the name horizontally */
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: black;
+/* Image Section */
+.image-container {
+    width: 100%; /* Make image take full width */
+    max-width: 500px; /* Set a max width for the image (slightly smaller) */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin-bottom: 50px; /* Added margin to create space between sections */
 }
 
-/* Top-right Button */
-.top-right-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 20px; /* Add space between the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    width: 100%;
+    margin-bottom: 50px; /* Space between the buttons and footer */
+}
+
+/* Top-left Box (Designs) */
+.top-left-box {
     padding: 10px 20px;
-    background-color: transparent; /* Make the button background transparent */
+    background-color: transparent; /* Make the box background transparent */
     color: black; /* Make text color black */
     font-size: 1rem;
     text-decoration: none;
@@ -39,18 +43,27 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.top-right-button:hover {
+.top-left-box:hover {
     background-color: black; /* Change background color on hover */
     color: white; /* Change text color to white on hover */
 }
 
-/* Image Section */
-.image-container {
-    width: 100%; /* Make image take full width */
-    max-width: 500px; /* Set a max width for the image (slightly smaller) */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image */
-    margin-bottom: 50px; /* Added margin to create space between sections */
+/* Top-right Box (Contact) */
+.top-right-box {
+    padding: 10px 20px;
+    background-color: transparent; /* Make the box background transparent */
+    color: black; /* Make text color black */
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-right-box:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color to white on hover */
 }
 
 /* Contact Section */
@@ -107,9 +120,5 @@ footer {
 
     .contact-section {
         font-size: 1rem;  /* Slightly smaller font on mobile */
-    }
-
-    .top-center-name {
-        font-size: 1.2rem; /* Adjust font size for mobile */
     }
 }
