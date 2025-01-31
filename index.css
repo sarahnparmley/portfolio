@@ -15,7 +15,7 @@ body {
 /* Image Section */
 .image-container {
     width: 100%; /* Make image take full width */
-    max-width: 600px; /* Set a max width for the image */
+    max-width: 500px; /* Set a max width for the image (slightly smaller) */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Center the image */
     margin-bottom: 50px; /* Added margin to create space between sections */
