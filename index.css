@@ -30,23 +30,23 @@ body {
     margin-bottom: 50px; /* Space between buttons and footer */
 }
 
-/* Updated Designs & Contact Buttons */
-.top-left-box, .top-right-box {
-    padding: 12px 30px; /* Match LinkedIn box */
+/* Updated Buttons for Designs, About, and Contact */
+.top-left-box, .top-middle-box, .top-right-box {
+    padding: 12px 30px; /* Padding for the buttons */
     border: 2px solid black;
     border-radius: 5px;
     background-color: transparent;
-    font-size: 1.2rem; /* Match font size */
+    font-size: 1.2rem; /* Font size for the buttons */
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    width: 100px;
+    width: 100px; /* Set the width to 100px for all buttons */
     transition: all 0.3s ease;
     color: black;
     display: inline-block;
 }
 
-.top-left-box:hover, .top-right-box:hover {
+.top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
     background-color: black;
     color: white;
 }
