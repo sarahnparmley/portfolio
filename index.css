@@ -30,7 +30,7 @@ body {
     margin-bottom: 50px; /* Space between buttons and footer */
 }
 
-/* Updated Buttons for Designs, About, and Contact */
+/* Transparent Buttons (Designs, About, Contact) */
 .top-left-box, .top-middle-box, .top-right-box {
     padding: 12px 30px; /* Padding for the buttons */
     border: 2px solid black;
