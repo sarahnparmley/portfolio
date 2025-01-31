@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Aromatica', sans-serif; /* Apply AROMATicA Regular font */
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
     background-color: white; /* Change background to white */
     color: black; /* Change text color to black */
     margin: 0;
@@ -41,7 +41,7 @@ footer {
 
 /* LinkedIn Button Styling */
 .linkedin-box {
-    font-family: 'Aromatica', sans-serif; /* Use AROMATicA Regular font */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
     color: black; /* Change text color to black */
     font-size: 1.5rem;
     text-transform: uppercase;
