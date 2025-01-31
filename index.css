@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
-    background-color: white; /* Change background to white */
-    color: black; /* Change text color to black */
+    background-color: white; /* White background */
+    color: black; /* Black text */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -15,110 +15,96 @@ body {
 /* Image Section */
 .image-container {
     width: 100%; /* Make image take full width */
-    max-width: 500px; /* Set a max width for the image (slightly smaller) */
+    max-width: 500px; /* Set a max width for the image */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image */
-    margin-bottom: 50px; /* Added margin to create space between sections */
+    display: block;
+    margin-bottom: 50px; /* Space between image and buttons */
 }
 
 /* Button Container */
 .button-container {
     display: flex;
-    gap: 20px; /* Add space between the buttons */
-    justify-content: center; /* Center the buttons horizontally */
-    width: 100%;
-    margin-bottom: 50px; /* Space between the buttons and footer */
-}
-
-/* Top-left Box (Designs) */
-.top-left-box {
-    padding: 10px 20px;
-    background-color: transparent; /* Make the box background transparent */
-    color: black; /* Make text color black */
-    font-size: 1rem;
-    text-decoration: none;
-    border: 2px solid black; /* Black border */
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.top-left-box:hover {
-    background-color: black; /* Change background color on hover */
-    color: white; /* Change text color to white on hover */
-}
-
-/* Top-right Box (Contact) */
-.top-right-box {
-    padding: 10px 20px;
-    background-color: transparent; /* Make the box background transparent */
-    color: black; /* Make text color black */
-    font-size: 1rem;
-    text-decoration: none;
-    border: 2px solid black; /* Black border */
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.top-right-box:hover {
-    background-color: black; /* Change background color on hover */
-    color: white; /* Change text color to white on hover */
-}
-
-/* Contact Section */
-footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: flex;
+    gap: 20px; /* Space between buttons */
     justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    background-color: white; /* Change footer background to white */
+    width: 100%;
+    margin-bottom: 50px; /* Space between buttons and footer */
 }
 
-.contact-section {
-    text-align: center;
-    font-size: 1.2rem;  /* Increased font size for better visibility */
-    color: black; /* Change contact text color to black */
-}
-
-/* LinkedIn Button Styling */
-.linkedin-box {
-    font-family: 'Poppins', sans-serif; /* Use Poppins font */
-    color: black; /* Change text color to black */
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    background-color: #ffffff; /* Change background color to white */
-    border: 2px solid black; /* Change border to black */
-    padding: 12px 30px;
+/* Transparent Button Style */
+.top-left-box, .top-right-box {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid black;
     border-radius: 5px;
-    width: 100px;
-    margin: 20px auto;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-left-box:hover, .top-right-box:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Contact Page Centering */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* LinkedIn Box */
+.linkedin-box {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     transition: all 0.3s ease;
 }
 
-.linkedin-box:hover {
-    background-color: #0A66C2;
-    color: white;
-    border: 2px solid #ffffff;
-    transform: scale(1.05);
+.linkedin-box a {
+    text-decoration: none;
+    color: black;
 }
 
-.linkedin-box a {
-    color: black; /* Change link text color to black */
-    text-decoration: none;
+.linkedin-box:hover {
+    background-color: black;
+    color: white;
+}
+
+.linkedin-box:hover a {
+    color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 500px) {
     .image-container {
-        max-width: 250px; /* Slightly smaller image on mobile */
+        max-width: 250px; /* Smaller image on mobile */
     }
 
-    .contact-section {
-        font-size: 1rem;  /* Slightly smaller font on mobile */
+    .contact-container h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .contact-container p {
+        font-size: 1rem; /* Adjust text size */
     }
 }
