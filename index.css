@@ -19,6 +19,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin-bottom: 50px; /* Space between image and buttons */
+    margin-top: 50px;
 }
 
 /* Button Container */
