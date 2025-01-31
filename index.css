@@ -12,11 +12,12 @@ body {
     position: relative;
 }
 
-/* Name at the top-left */
-.top-left-name {
+/* Name at the top-center */
+.top-center-name {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the name horizontally */
     font-size: 1.5rem;
     font-weight: 600;
     color: black;
@@ -28,17 +29,19 @@ body {
     top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #000;
-    color: white;
+    background-color: transparent; /* Make the button background transparent */
+    color: black; /* Make text color black */
     font-size: 1rem;
     text-decoration: none;
+    border: 2px solid black; /* Black border */
     border-radius: 5px;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .top-right-button:hover {
-    background-color: #333; /* Change color on hover */
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color to white on hover */
 }
 
 /* Image Section */
@@ -106,7 +109,7 @@ footer {
         font-size: 1rem;  /* Slightly smaller font on mobile */
     }
 
-    .top-left-name {
+    .top-center-name {
         font-size: 1.2rem; /* Adjust font size for mobile */
     }
 }
