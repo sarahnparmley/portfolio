@@ -55,7 +55,7 @@ body {
 /* Dropdown Button */
 .dropdown {
     position: absolute;
-    top: 10px; /* Adjust for spacing */
+    top: 40px; /* Adjust for spacing */
     left: 50%;
     transform: translateX(-50%); /* Center it horizontally */
     display: inline-block;
