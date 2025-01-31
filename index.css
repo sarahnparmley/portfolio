@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    font-family: 'Bebas Neue', sans-serif;
-    background-color: black;
-    color: white;
+    font-family: 'Aromatica', sans-serif; /* Apply AROMATicA Regular font */
+    background-color: white; /* Change background to white */
+    color: black; /* Change text color to black */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
     letter-spacing: 1px; /* Increased letter-spacing to make the text feel more square */
     word-spacing: 2px;  /* Slightly increased word spacing */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+    background-color: rgba(0, 0, 0, 0.05); /* Light gray background */
     border-radius: 10px;
     position: absolute;
     left: 10%;
@@ -39,23 +39,23 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white; /* Change footer background to white */
 }
 
 .contact-section {
     text-align: center;
     font-size: 1.2rem;  /* Increased font size for better visibility */
-    color: white;
+    color: black; /* Change contact text color to black */
 }
 
 /* LinkedIn Button Styling */
 .linkedin-box {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #ffffff;
+    font-family: 'Aromatica', sans-serif; /* Use AROMATicA Regular font */
+    color: black; /* Change text color to black */
     font-size: 1.5rem;
     text-transform: uppercase;
-    background-color: #000000;
-    border: 2px solid #ffffff;
+    background-color: #ffffff; /* Change background color to white */
+    border: 2px solid black; /* Change border to black */
     padding: 12px 30px;
     border-radius: 5px;
     width: 100px;
@@ -66,13 +66,13 @@ footer {
 
 .linkedin-box:hover {
     background-color: #0A66C2;
-    color: #ffffff;
+    color: white;
     border: 2px solid #ffffff;
     transform: scale(1.05);
 }
 
 .linkedin-box a {
-    color: white;
+    color: black; /* Change link text color to black */
     text-decoration: none;
 }
 
