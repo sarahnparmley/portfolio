@@ -27,7 +27,23 @@ body {
     transform: translateY(-50%);
 }
 
-/* Contact Section (Keep As-Is) */
+/* Contact Section */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-section {
+    text-align: center;
+}
+
+/* LinkedIn Button Styling */
 .linkedin-box {
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
@@ -38,11 +54,9 @@ body {
     padding: 12px 30px;
     border-radius: 5px;
     width: 100px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
     transition: all 0.3s ease;
-    margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .linkedin-box:hover {
