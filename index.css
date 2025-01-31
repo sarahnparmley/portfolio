@@ -51,6 +51,28 @@ body {
     color: white;
 }
 
+/* LinkedIn Box (for Contact Page) */
+.linkedin-box {
+    padding: 12px 30px; /* Match padding from the buttons */
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    transition: all 0.3s ease;
+    color: black;
+    display: inline-block;
+    margin-top: 20px; /* Add margin to space it out from text */
+}
+
+.linkedin-box:hover {
+    background-color: black;
+    color: white;
+}
+
 /* Contact Page Centering */
 .contact-container {
     display: flex;
