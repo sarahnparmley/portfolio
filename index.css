@@ -30,21 +30,30 @@ body {
     margin-bottom: 50px; /* Space between buttons and footer */
 }
 
-/* Transparent Button Style */
-.top-left-box, .top-right-box {
-    padding: 10px 20px;
-    background-color: transparent;
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
+/* Buttons (Now Matching LinkedIn Box) */
+.top-left-box, .top-right-box, .linkedin-box {
+    padding: 12px 30px; /* Same padding */
     border: 2px solid black;
     border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.top-left-box:hover, .top-right-box:hover {
+.top-left-box, .top-right-box {
+    color: black;
+    display: inline-block;
+}
+
+.top-left-box:hover, .top-right-box:hover, .linkedin-box:hover {
     background-color: black;
+    color: white;
+}
+
+.top-left-box:hover a, .top-right-box:hover a, .linkedin-box:hover a {
     color: white;
 }
 
@@ -68,49 +77,6 @@ body {
     margin: 5px 0;
 }
 
-/* LinkedIn Box */
-.linkedin-box {
-    margin-top: 20px;
-    padding: 12px 30px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-.linkedin-box a {
-    text-decoration: none;
-    color: black;
-}
-
-.linkedin-box:hover {
-    background-color: black;
-    color: white;
-}
-
-.linkedin-box:hover a {
-    color: white;
-}
-
-/* Designs Page Styling */
-.designs-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align to top */
-    height: 100vh;
-    text-align: center;
-    padding-top: 20px; /* Space from top */
-}
-
-.designs-container h1 {
-    font-size: 2rem; /* Set font size */
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Add spacing from the top */
-}
-
 /* Responsive Design */
 @media (max-width: 500px) {
     .image-container {
@@ -123,9 +89,5 @@ body {
 
     .contact-container p {
         font-size: 1rem; /* Adjust text size */
-    }
-
-    .designs-container h1 {
-        font-size: 1.5rem; /* Adjust heading size */
     }
 }
