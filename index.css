@@ -66,7 +66,7 @@ body {
     transition: all 0.3s ease;
     color: black;
     display: inline-block;
-    margin-top: 20px; /* Add margin to space it out from text */
+    margin-top: 40px; /* Add margin to space it out from text */
 }
 
 .linkedin-box:hover {
