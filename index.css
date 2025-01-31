@@ -16,8 +16,10 @@ body {
 .text-container {
     max-width: 300px;
     text-align: left;
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.6; /* Adjusted line-height for readability */
+    letter-spacing: 1px; /* Increased letter-spacing to make the text feel more square */
+    word-spacing: 2px;  /* Slightly increased word spacing */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0); /* Fully transparent */
     border-radius: 10px;
@@ -77,7 +79,7 @@ footer {
 @media (max-width: 500px) {
     .text-container {
         max-width: 250px;
-        font-size: 0.9rem;
+        font-size: 1.1rem; /* Slightly smaller font on mobile */
         padding: 15px;
     }
 
