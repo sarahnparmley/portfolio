@@ -12,21 +12,12 @@ body {
     position: relative;
 }
 
-/* Text Container (First Section) */
-.text-container {
-    max-width: 300px;
-    text-align: left;
-    font-size: 1.2rem; /* Larger font size */
-    line-height: 1.6; /* Adjusted line-height for readability */
-    letter-spacing: 1px; /* Increased letter-spacing to make the text feel more square */
-    word-spacing: 2px;  /* Slightly increased word spacing */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.05); /* Light gray background */
-    border-radius: 10px;
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+/* Image Section */
+.image-container {
+    width: 100%; /* Make image take full width */
+    max-width: 600px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
     margin-bottom: 50px; /* Added margin to create space between sections */
 }
 
@@ -78,10 +69,8 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 500px) {
-    .text-container {
-        max-width: 250px;
-        font-size: 1.1rem; /* Slightly smaller font on mobile */
-        padding: 15px;
+    .image-container {
+        max-width: 250px; /* Slightly smaller image on mobile */
     }
 
     .contact-section {
