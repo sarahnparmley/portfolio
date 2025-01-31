@@ -94,6 +94,23 @@ body {
     color: white;
 }
 
+/* Designs Page Styling */
+.designs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align to top */
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px; /* Space from top */
+}
+
+.designs-container h1 {
+    font-size: 2rem; /* Set font size */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add spacing from the top */
+}
+
 /* Responsive Design */
 @media (max-width: 500px) {
     .image-container {
@@ -106,5 +123,9 @@ body {
 
     .contact-container p {
         font-size: 1rem; /* Adjust text size */
+    }
+
+    .designs-container h1 {
+        font-size: 1.5rem; /* Adjust heading size */
     }
 }
