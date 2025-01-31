@@ -154,6 +154,23 @@ body {
     margin: 5px 0;
 }
 
+/* Centering Content on About and Designs Pages */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    padding: 20px;
+}
+
+.center-container h1, .center-container p {
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
 /* Responsive Design */
 @media (max-width: 500px) {
     .image-container {
