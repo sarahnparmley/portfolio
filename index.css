@@ -12,6 +12,25 @@ body {
     position: relative;
 }
 
+/* Top-right Button */
+.top-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.top-right-button:hover {
+    background-color: #333; /* Change color on hover */
+}
+
 /* Image Section */
 .image-container {
     width: 100%; /* Make image take full width */
