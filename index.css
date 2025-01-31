@@ -27,6 +27,7 @@ body {
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
+    margin-bottom: 50px; /* Added margin to create space between sections */
 }
 
 /* Contact Section */
