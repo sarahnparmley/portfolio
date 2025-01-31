@@ -12,6 +12,16 @@ body {
     position: relative;
 }
 
+/* Name at the top-left */
+.top-left-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
 /* Top-right Button */
 .top-right-button {
     position: absolute;
@@ -94,5 +104,9 @@ footer {
 
     .contact-section {
         font-size: 1rem;  /* Slightly smaller font on mobile */
+    }
+
+    .top-left-name {
+        font-size: 1.2rem; /* Adjust font size for mobile */
     }
 }
