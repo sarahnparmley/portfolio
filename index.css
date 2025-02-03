@@ -75,8 +75,8 @@ body {
 }
 
 .dropbtn:hover {
-    background-color: black;
-    color: white;
+    background-color: none;
+    color: black;
 }
 
 /* Dropdown Content */
@@ -86,7 +86,7 @@ body {
     background-color: white;
     min-width: 120px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0);
     z-index: 1;
     left: 50%;
     transform: translateX(-50%); /* Center dropdown under button */
@@ -97,7 +97,7 @@ body {
     color: black;
     padding: 10px;
     text-decoration: none;
-    display: block;
+    display: table-cell;
     text-align: center;
     transition: background 0.3s ease;
 }
