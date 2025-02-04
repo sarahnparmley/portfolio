@@ -1,8 +1,7 @@
-/* General Styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
-    background-color: white; /* White background */
-    color: black; /* Black text */
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -12,43 +11,40 @@ body {
     position: relative;
 }
 
-/* Image Section */
 .image-container {
-    width: 100%; /* Make image take full width */
-    max-width: 500px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;  
     display: block;
-    margin-bottom: 50px; /* Space between image and buttons */
+    margin-bottom: 50px;  
     margin-top: 50px;
 }
 
 .design-image {
-    max-width: 100%; /* Ensure it scales properly */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Add space between heading and image */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    max-width: 50%;  
+    height: auto;  
+    margin-top: 100px;  
+    border-radius: 0px;  
 }
 
-/* Button Container */
 .button-container {
     display: flex;
-    gap: 20px; /* Space between buttons */
+    gap: 20px;  
     justify-content: center;
     width: 100%;
-    margin-bottom: 50px; /* Space between buttons and footer */
+    margin-bottom: 50px;  
 }
 
-/* Transparent Buttons (Designs, About, Contact) */
 .top-left-box, .top-middle-box, .top-right-box {
-    padding: 12px 30px; /* Padding for the buttons */
+    padding: 12px 30px;  
     border: 2px solid black;
     border-radius: 5px;
     background-color: transparent;
-    font-size: 1.2rem; /* Font size for the buttons */
+    font-size: 1.2rem;  
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    width: 100px; /* Set the width to 100px for all buttons */
+    width: 100px;  
     transition: all 0.3s ease;
     color: black;
     display: inline-block;
@@ -59,22 +55,20 @@ body {
     color: white;
 }
 
-/* Dropdown Button */
 .dropdown {
     position: absolute;
-    top: 40px; /* Adjust for spacing */
+    top: 40px; 
     left: 50%;
-    transform: translateX(-50%); /* Center it horizontally */
+    transform: translateX(-50%);  
     display: inline-block;
 }
 
-/* Menu Button (Dropdown Trigger) */
 .dropbtn {
     background-color: transparent;
     color: black;
     font-size: 1.2rem;
     padding: 12px 30px;
-    border: none; /* Remove border */
+    border: none; 
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
@@ -86,7 +80,6 @@ body {
     color: black;
 }
 
-/* Dropdown Content */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -96,10 +89,9 @@ body {
     box-shadow: 2px 2px 5px rgba(0,0,0,0);
     z-index: 1;
     left: 50%;
-    transform: translateX(-50%); /* Center dropdown under button */
+    transform: translateX(-50%);  
 }
 
-/* Dropdown Links */
 .dropdown-content a {
     color: black;
     padding: 10px;
@@ -114,14 +106,12 @@ body {
     color: white;
 }
 
-/* Show the dropdown when hovering */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* LinkedIn Box (for Contact Page) */
 .linkedin-box {
-    padding: 12px 30px; /* Match padding from the buttons */
+    padding: 12px 30px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: transparent;
@@ -133,7 +123,7 @@ body {
     transition: all 0.3s ease;
     color: black;
     display: inline-block;
-    margin-top: 40px; /* Add margin to space it out from text */
+    margin-top: 40px; 
 }
 
 .linkedin-box:hover {
@@ -141,13 +131,12 @@ body {
     color: white;
 }
 
-/* Contact Page Centering */
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full height */
+    height: 100vh; 
     text-align: center;
 }
 
@@ -161,13 +150,12 @@ body {
     margin: 5px 0;
 }
 
-/* Centering Content on About and Designs Pages */
 .center-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh; 
     text-align: center;
     padding: 20px;
 }
@@ -178,17 +166,16 @@ body {
     line-height: 1.5;
 }
 
-/* Responsive Design */
 @media (max-width: 500px) {
     .image-container {
-        max-width: 250px; /* Smaller image on mobile */
+        max-width: 250px;  
     }
 
     .contact-container h1 {
-        font-size: 1.5rem; /* Adjust heading size */
+        font-size: 1.5rem;  
     }
 
     .contact-container p {
-        font-size: 1rem; /* Adjust text size */
+        font-size: 1rem;  
     }
 }
