@@ -84,10 +84,10 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: none;
     min-width: 120px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0);
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);  
@@ -108,8 +108,8 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: black;
-    color: white;
+    background-color: none;
+    color: black;
 }
 
 .dropdown:hover .dropdown-content {
