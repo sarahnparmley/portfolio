@@ -33,6 +33,11 @@ body {
     justify-content: center;
     width: 100%;
     margin-bottom: 50px;  
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px 0;
+    z-index: 1000;
 }
 
 .top-left-box, .top-middle-box, .top-right-box {
