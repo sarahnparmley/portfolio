@@ -11,6 +11,17 @@ body {
     position: relative;
 }
 
+
+<--main screen-->
+.image-container {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;  
+    display: block;
+    margin-bottom: 0px;  
+    margin-top: 50px;
+}
+
 .main-buttons .top-left-box,
 .main-buttons .top-middle-box,
 .main-buttons .top-right-box {
@@ -34,20 +45,32 @@ body {
     background-color: black;
     color: white;
 }
-.image-container {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto;  
-    display: block;
-    margin-bottom: 50px;  
-    margin-top: 50px;
+
+
+<--top navigation section-->
+.top-left-box, 
+.top-middle-box, 
+.top-right-box {
+    padding: 12px 30px;  
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;  
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;  
+    transition: all 0.3s ease;
+    color: black;
+    display: inline-block;
 }
 
-.design-image {
-    max-width: 50%;  
-    height: auto;  
-    margin-top: 100px;  
-    border-radius: 0px;  
+.top-left-box:hover, 
+.top-middle-box:hover, 
+.top-right-box:hover {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
 }
 
 .button-container {
@@ -63,27 +86,18 @@ body {
     z-index: 1000;
 }
 
-.top-left-box, .top-middle-box, .top-right-box {
-    padding: 12px 30px;  
-    border: none;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 1.2rem;  
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;  
-    transition: all 0.3s ease;
-    color: black;
-    display: inline-block;
+
+<--designs section-->
+.design-image {
+    max-width: 50%;  
+    height: auto;  
+    margin-top: 100px;  
+    border-radius: 0px;  
 }
 
-.top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
-    background-color: transparent;
-    color: black;
-    text-decoration: underline;
-}
+<--about section-->
 
+<--contact section-->
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -92,6 +106,16 @@ body {
     height: 100vh;
     text-align: center;
     margin-top: -100px; 
+}
+
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 .linkedin-box {
@@ -115,25 +139,7 @@ body {
     color: white;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    text-align: center;
-}
-
-.contact-container h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.contact-container p {
-    font-size: 1.2rem;
-    margin: 5px 0;
-}
-
+<--does this have a purpose-->
 .center-container {
     display: flex;
     flex-direction: column;
@@ -150,6 +156,7 @@ body {
     line-height: 1.5;
 }
 
+<--responsive-->
 @media (max-width: 500px) {
     .image-container {
         max-width: 250px;  
