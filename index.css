@@ -173,6 +173,7 @@ body {
     justify-content: center;
     height: 100vh; 
     text-align: center;
+    margin-top: -100px;
 }
 
 .contact-container h1 {
