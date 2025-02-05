@@ -11,6 +11,29 @@ body {
     position: relative;
 }
 
+.main-buttons .top-left-box,
+.main-buttons .top-middle-box,
+.main-buttons .top-right-box {
+    padding: 12px 30px;  
+    border: 2px solid black;  /* Original border */
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;  
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;  
+    transition: all 0.3s ease;
+    color: black;
+    display: inline-block;
+}
+
+.main-buttons .top-left-box:hover,
+.main-buttons .top-middle-box:hover,
+.main-buttons .top-right-box:hover {
+    background-color: black;
+    color: white;
+}
 .image-container {
     width: 100%; 
     max-width: 500px; 
