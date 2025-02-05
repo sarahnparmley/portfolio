@@ -11,17 +11,6 @@ body {
     position: relative;
 }
 
-
-<--main screen-->
-.image-container {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto;  
-    display: block;
-    margin-bottom: 0px;  
-    margin-top: 50px;
-}
-
 .main-buttons .top-left-box,
 .main-buttons .top-middle-box,
 .main-buttons .top-right-box {
@@ -45,32 +34,20 @@ body {
     background-color: black;
     color: white;
 }
-
-
-<--top navigation section-->
-.top-left-box, 
-.top-middle-box, 
-.top-right-box {
-    padding: 12px 30px;  
-    border: none;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 1.2rem;  
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;  
-    transition: all 0.3s ease;
-    color: black;
-    display: inline-block;
+.image-container {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;  
+    display: block;
+    margin-bottom: 50px;  
+    margin-top: 50px;
 }
 
-.top-left-box:hover, 
-.top-middle-box:hover, 
-.top-right-box:hover {
-    background-color: transparent;
-    color: black;
-    text-decoration: underline;
+.design-image {
+    max-width: 50%;  
+    height: auto;  
+    margin-top: 100px;  
+    border-radius: 0px;  
 }
 
 .button-container {
@@ -86,36 +63,86 @@ body {
     z-index: 1000;
 }
 
-
-<--designs section-->
-.design-image {
-    max-width: 50%;  
-    height: auto;  
-    margin-top: 100px;  
-    border-radius: 0px;  
-}
-
-<--about section-->
-
-<--contact section-->
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.top-left-box, .top-middle-box, .top-right-box {
+    padding: 12px 30px;  
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;  
+    text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
-    margin-top: -100px; 
+    width: 100px;  
+    transition: all 0.3s ease;
+    color: black;
+    display: inline-block;
 }
 
-.contact-container h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
 }
 
-.contact-container p {
+.dropdown {
+    position: fixed;
+    top: 0px; 
+    left: 50%;
+    transform: translateX(-50%);  
+    display: inline-block;
+    z-index: 1000; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 30px 0; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
     font-size: 1.2rem;
-    margin: 5px 0;
+    padding: 12px 30px;
+    border: none; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 120px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);  
+}
+
+.dropbtn:hover {
+    background-color: none;
+    color: black;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: table-cell;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: none;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .linkedin-box {
@@ -139,7 +166,25 @@ body {
     color: white;
 }
 
-<--does this have a purpose-->
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
 .center-container {
     display: flex;
     flex-direction: column;
@@ -156,7 +201,6 @@ body {
     line-height: 1.5;
 }
 
-<--responsive-->
 @media (max-width: 500px) {
     .image-container {
         max-width: 250px;  
