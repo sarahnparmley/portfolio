@@ -55,6 +55,7 @@ body {
     justify-content: center; 
     gap: 20px; 
     margin-top: 60px; 
+    flex-wrap: wrap;
 }
 
 .design-image {
