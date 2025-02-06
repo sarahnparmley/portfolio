@@ -45,10 +45,21 @@ body {
     margin-top: 50px;
 }
 
+.designs-container {
+    margin-top: 0px; 
+    text-align: center;
+}
+
+.images-row {
+    display: flex; /* Align images horizontally */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between images */
+    margin-top: 20px; /* Optional: adds space between the text and images */
+}
+
 .design-image {
-    max-width: 50%;  
-    height: auto;  
-    margin-top: 100px;  
+    max-width: 25%;  
+    height: auto;   
     border-radius: 0px;  
 }
 
@@ -125,11 +136,6 @@ body {
 .contact-container p {
     font-size: 1.2rem;
     margin: 5px 0;
-}
-
-.designs-container {
-    margin-top: 0px; 
-    text-align: center;
 }
 
 @media (max-width: 500px) {
