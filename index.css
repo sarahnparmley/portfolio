@@ -161,6 +161,32 @@ p {
     margin: 5px 0;
 }
 
+@media (max-width: 768px) {
+    #home-page .image-container {
+        display: block;
+        max-width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #home-page .button-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #home-page .button-container a {
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+}
+
 @media (max-width: 500px) {
     .image-container {
         max-width: 250px;  
