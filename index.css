@@ -127,20 +127,9 @@ body {
     margin: 5px 0;
 }
 
-.center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
+.designs-container {
+    margin-top: 0px; 
     text-align: center;
-    padding: 20px;
-}
-
-.center-container h1, .center-container p {
-    text-align: center;
-    max-width: 600px;
-    line-height: 1.5;
 }
 
 @media (max-width: 500px) {
