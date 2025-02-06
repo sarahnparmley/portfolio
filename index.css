@@ -61,6 +61,7 @@ body {
     max-width: 25%;  
     height: auto;   
     border-radius: 0px;  
+    object-fit: contain;
 }
 
 .button-container {
