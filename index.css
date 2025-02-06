@@ -15,7 +15,7 @@ body {
 .main-buttons .top-middle-box,
 .main-buttons .top-right-box {
     padding: 12px 30px;  
-    border: 2px solid black;  /* Original border */
+    border: 2px solid black;  
     border-radius: 5px;
     background-color: transparent;
     font-size: 1.2rem;  
@@ -51,10 +51,10 @@ body {
 }
 
 .images-row {
-    display: flex; /* Align images horizontally */
-    justify-content: center; /* Center the images horizontally */
-    gap: 20px; /* Space between images */
-    margin-top: 20px; /* Optional: adds space between the text and images */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 60px; 
 }
 
 .design-image {
