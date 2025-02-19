@@ -98,17 +98,29 @@ p {
     min-height: 100vh;  
 }
 
+/* Default button-container styles (applies to all pages) */
 .button-container {
     display: flex;
     gap: 20px;  
     justify-content: center;
     width: 100%;
     margin-bottom: 50px;  
-    position: sticky;
-    top: 0;
-    background: linear-gradient(to bottom, white, transparent);
     padding: 10px 0;
     z-index: 1000;
+}
+
+/* Apply gradient ONLY on Designs, About, and Contact pages */
+#designs-page .button-container,
+#about-page .button-container,
+#contact-page .button-container {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to bottom, white, transparent); 
+}
+
+/* Ensure homepage has no gradient */
+#home-page .button-container {
+    background: none;
 }
 
 .top-left-box, .top-middle-box, .top-right-box {
