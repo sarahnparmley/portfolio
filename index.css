@@ -409,3 +409,33 @@ media (max-width: 768px) {
     }
 }
 
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px; 
+        width: 100%;
+    }
+
+    .button-container a {
+        flex: 1; 
+        max-width: 100px; 
+        font-size: 1rem;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .button-container .top-left-box {
+        order: 2; 
+    }
+
+    .button-container .top-middle-box {
+        order: 1; 
+    }
+
+    .button-container .top-right-box {
+        order: 3;
+    }
+}
+
