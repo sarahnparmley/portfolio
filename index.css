@@ -19,7 +19,7 @@ body {
 
 /* Background for Contact Page */
 #contact-page {
-    background-image: url('CONTACT-BG.png'); /* Replace with your contact page background */
+    background-image: url('CP.png'); /* Replace with your contact page background */
 }
 
 body::before {
