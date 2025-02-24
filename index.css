@@ -472,7 +472,7 @@ media (max-width: 768px) {
     }
 
     .design-image {
-        max-width: 80%; /* Adjust image width for better fit */
+        max-width: 70%; /* Adjust image width for better fit */
         height: auto;
     }
 }
