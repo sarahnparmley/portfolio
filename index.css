@@ -447,5 +447,19 @@ media (max-width: 768px) {
     .button-container .top-right-box {
         order: 3;
     }
+
+    @media (max-width: 768px) {
+    .images-row {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center align images */
+        gap: 20px; /* Add spacing between images */
+    }
+
+    .design-image {
+        max-width: 80%; /* Adjust image width for better fit */
+        height: auto;
+    }
+}
+
 }
 
