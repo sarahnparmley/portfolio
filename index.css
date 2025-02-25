@@ -67,6 +67,31 @@ body::before {
     text-decoration: none;
 }
 
+/* Hover Effect: Increase size only for Designs, About, and Contact pages */
+#designs-page .top-left-box:hover,
+#designs-page .top-middle-box:hover,
+#designs-page .top-right-box:hover,
+#about-page .top-left-box:hover,
+#about-page .top-middle-box:hover,
+#about-page .top-right-box:hover,
+#contact-page .top-left-box:hover,
+#contact-page .top-middle-box:hover,
+#contact-page .top-right-box:hover {
+    transform: scale(1.3); /* Enlarge the button */
+    background-color: black;
+    color: white;
+    text-decoration: none !important;
+}
+
+/* Ensure homepage buttons do not enlarge */
+#home-page .top-left-box:hover,
+#home-page .top-middle-box:hover,
+#home-page .top-right-box:hover {
+    transform: none;
+    background-color: black;
+    color: white;
+}
+
 .image-container {
     width: 100%; 
     max-width: 500px; 
