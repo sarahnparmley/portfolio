@@ -28,7 +28,7 @@ body {
 
 /* Background for Contact Page */
 #contact-page {
-    background-image: url('.png'); /* Replace with your contact page background */
+    background-image: url('MARTINI.png'); /* Replace with your contact page background */
 }
 
 body::before {
