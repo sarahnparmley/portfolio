@@ -59,14 +59,6 @@ body::before {
     display: inline-block;
 }
 
-.main-buttons .top-left-box:hover,
-.main-buttons .top-middle-box:hover,
-.main-buttons .top-right-box:hover {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-}
-
 /* Hover Effect: Increase size only for Designs, About, and Contact pages */
 #designs-page .top-left-box:hover,
 #designs-page .top-middle-box:hover,
