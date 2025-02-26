@@ -25,7 +25,7 @@ body {
 }
 
 #contact-page {
-    background-image: url('MARTINI.png'); 
+    background-image: url('.png'); 
 }
 
 body::before {
