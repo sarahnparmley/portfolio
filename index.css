@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-family: 'Poppins', sans-serif;
     background-size: cover;
@@ -11,6 +12,7 @@ body {
     position: relative;
 }
 
+/* Sticky buttons container at the top */
 .sticky-buttons {
     position: sticky;
     top: 0;
@@ -20,14 +22,26 @@ body {
     text-align: center;
 }
 
+/* Home page background image */
 #home-page {
     background-image: url('BGH.png'); 
 }
 
+/* Hover effects for buttons on the home page */
+#home-page .top-left-box:hover,
+#home-page .top-middle-box:hover,
+#home-page .top-right-box:hover {
+    transform: none;
+    background-color: black;
+    color: white;
+}
+
+/* Contact page background image */
 #contact-page {
     background-image: url('.png'); 
 }
 
+/* Body background overlay */
 body::before {
     content: "";
     position: absolute;
@@ -39,13 +53,14 @@ body::before {
     z-index: -1; 
 }
 
+/* General button styles */
 .main-buttons .top-left-box,
 .main-buttons .top-middle-box,
 .main-buttons .top-right-box {
     padding: 12px 30px;  
     border: 2px solid black;  
     border-radius: 5px;
-    background-color: transparent;
+    background-color: white;
     font-size: 1.2rem;  
     text-transform: uppercase;
     text-decoration: none;
@@ -56,6 +71,7 @@ body::before {
     display: inline-block;
 }
 
+/* Hover effects for buttons */
 #designs-page .top-left-box:hover,
 #designs-page .top-middle-box:hover,
 #designs-page .top-right-box:hover,
@@ -71,14 +87,67 @@ body::before {
     text-decoration: none !important;
 }
 
-#home-page .top-left-box:hover,
-#home-page .top-middle-box:hover,
-#home-page .top-right-box:hover {
-    transform: none;
-    background-color: black;
-    color: white;
+/* Button container to span the full width at the top */
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Distribute the buttons evenly */
+    width: 100%; /* Full width */
+    background-color: rgba(255, 255, 255, 0.8); /* 80% opacity background */
+    padding: 10px 0;
+    z-index: 1000;
+    border: none; /* Remove border around the container */
 }
 
+/* Individual buttons that span the entire width */
+.top-left-box, .top-middle-box, .top-right-box {
+    padding: 12px 30px;
+    border: 2px solid white;  /* White border (optional) */
+    border-radius: 5px;
+    background-color: white; /* Default background */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;  /* Make buttons span the same width */
+    transition: all 0.3s ease-in-out;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px; /* Ensure some space between buttons */
+}
+
+/* Hover effect on top buttons */
+.top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
+    transform: scale(1.1);  /* Reduced scale to prevent overflow */
+    background-color: none; /* Maintain transparency with slight opacity change */
+    color: black;
+    text-decoration: none !important;
+    outline: none;  /* Ensure no outline on hover */
+}
+
+
+/* Ensure the hover effect works on all pages */
+#designs-page .top-left-box:hover,
+#designs-page .top-middle-box:hover,
+#designs-page .top-right-box:hover,
+#about-page .top-left-box:hover,
+#about-page .top-middle-box:hover,
+#about-page .top-right-box:hover,
+#contact-page .top-left-box:hover,
+#contact-page .top-middle-box:hover,
+#contact-page .top-right-box:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    outline: none; /* Prevent outline on hover */
+}
+
+/* Optional: Add white outline to the button container */
+.button-container {
+    border-top: 2px solid white; /* Optional white outline around the container */
+}
+
+/* Image container */
 .image-container {
     width: 100%; 
     max-width: 500px; 
@@ -88,16 +157,19 @@ body::before {
     margin-top: 100px;
 }
 
+/* Designs container */
 .designs-container {
     text-align: center;
     margin-bottom: 60px;
     text-transform: uppercase;
 }
 
+/* Design section */
 .design-section {
     margin-bottom: 50px;
 }
 
+/* Flexbox for images */
 .images-row {
     display: flex; 
     justify-content: center; 
@@ -105,6 +177,7 @@ body::before {
     flex-wrap: wrap;
 }
 
+/* Design images */
 .design-image {
     max-width: 25%;  
     height: auto;   
@@ -112,16 +185,19 @@ body::before {
     object-fit: contain;
 }
 
+/* Heading */
 h2 {
     margin-bottom: 10px;
     font-size: 1.8rem;
 }
 
+/* Paragraph */
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
+/* About container */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -130,6 +206,7 @@ p {
     min-height: 100vh;  
 }
 
+/* Button container for About, Designs, and Contact pages */
 .button-container {
     display: flex;
     gap: 20px;  
@@ -140,6 +217,7 @@ p {
     z-index: 1000;
 }
 
+/* Page-specific sticky button container background */
 #designs-page .button-container,
 #about-page .button-container,
 #contact-page .button-container {
@@ -148,13 +226,15 @@ p {
     background: linear-gradient(to bottom, white, transparent); 
 }
 
+/* Home page button container */
 #home-page .button-container {
     background: none;
 }
 
+/* Top buttons styling */
 .top-left-box, .top-middle-box, .top-right-box {
     padding: 12px 30px;  
-    border: ;
+    border: none;
     border-radius: 5px;
     background-color: transparent;
     font-size: 1.2rem;
@@ -167,13 +247,15 @@ p {
     display: inline-block;
 }
 
+/* Hover effect on top buttons */
 .top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
     transform: scale(1.3); 
-    background-color: ;
+    background-color: none;
     color: black;
     text-decoration: none !important;
 }
 
+/* LinkedIn box styling */
 .linkedin-box {
     padding: 12px 30px;
     border: 2px solid black;
@@ -190,11 +272,13 @@ p {
     margin-top: 40px; 
 }
 
+/* Hover effect on LinkedIn box */
 .linkedin-box:hover {
     background-color: black;
     color: white;
 }
 
+/* Contact container styling */
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -215,7 +299,9 @@ p {
     margin: 5px 0;
 }
 
+/* Media queries for smaller screens */
 
+/* Max-width 768px */
 @media (max-width: 768px) {
     #home-page .image-container {
         display: block;
@@ -243,6 +329,7 @@ p {
     }
 }
 
+/* Max-width 500px */
 @media (max-width: 500px) {
     .image-container {
         max-width: 250px;  
@@ -257,186 +344,7 @@ p {
     }
 }
 
-.image-container {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto;  
-    display: block;
-    margin-top: 120px;
-    margin-bottom: 0px;  
-}
-
-@media (max-width: 768px) {
-    .image-container {
-        margin-top: 180px !important; 
-    }
-}
-
-@media (max-width: 500px) {
-    .image-container {
-        margin-top: 120px !important;
-    }
-}
-
-media (max-width: 768px) {
-    .images-row {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        gap: 20px; 
-    }
-
-    .design-image {
-        max-width: 70%; 
-        height: auto;
-    }
-
-    .button-container {
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        padding: 0px;
-        z-index: 1000;
-        background: ;
-    }
-
-    .top-left-box, .top-middle-box, .top-right-box {
-        padding: 10px 30px;
-        font-size: 1rem;
-    }
-
-    .button-container .top-left-box {
-        position: absolute;
-        left: 10px;
-    }
-
-    .button-container .top-right-box {
-        position: absolute;
-        right: 10px;
-    }
-    
-    .top-middle-box {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    body {
-        padding-top: 30px;
-    }
-}
-
-media (max-width: 768px) {
-    .images-row {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        gap: 20px; 
-    }
-
-    .design-image {
-        max-width: 70%; 
-        height: auto;
-    }
-
-    .button-container {
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        padding: 0px;
-        z-index: 1000;
-        background: ;
-    }
-
-    .top-left-box, .top-middle-box, .top-right-box {
-        padding: 10px 30px;
-        font-size: 1rem;
-    }
-
-    .button-container .top-left-box {
-        position: absolute;
-        left: 10px;
-    }
-
-    .button-container .top-right-box {
-        position: absolute;
-        right: 10px;
-    }
-    
-    .top-middle-box {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    body {
-        padding-top: 30px;
-    }
-}
-
-@media (max-width: 768px) ) {
-    .images-row {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        gap: 20px; 
-    }
-
-    .design-image {
-        max-width: 70%; 
-        height: auto;
-    }
-
-    .button-container {
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        padding: 0px;
-        z-index: 1000;
-        background: ;
-    }
-
-    .top-left-box, .top-middle-box, .top-right-box {
-        padding: 10px 30px;
-        font-size: 1rem;
-    }
-
-    .button-container .top-left-box {
-        position: absolute;
-        left: 10px;
-    }
-
-    .button-container .top-right-box {
-        position: absolute;
-        right: 10px;
-    }
-    
-    .top-middle-box {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    body {
-        padding-top: 30px;
-    }
-}
-
+/* Max-width 768px for button container */
 @media (max-width: 768px) {
     .button-container {
         display: flex;
@@ -467,22 +375,13 @@ media (max-width: 768px) {
         order: 3;
     }
 
-.design-section p {
-    font-size: 1.8rem; 
-    font-weight: ; 
-    text-transform: uppercase; 
-    text-align: center;
-    margin-bottom:10px;
-    margin-top: 100px;
-}
-
-@media (max-width: 768px) {
     .design-section p {
-        font-size: 2.7rem; 
+        font-size: 1.8rem; 
     }
 }
-    
-    @media (max-width: 768px) {
+
+/* Max-width 768px for images and button container */
+@media (max-width: 768px) {
     .images-row {
         flex-direction: column; 
         align-items: center; 
@@ -493,7 +392,17 @@ media (max-width: 768px) {
         max-width: 70%; 
         height: auto;
     }
-}
 
+    .button-container {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px;
+        margin-top: 30px;
+    }
 }
-
