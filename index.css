@@ -95,7 +95,7 @@ body::before {
     background-color: rgba(255, 255, 255, 0.8); /* 80% opacity background */
     padding: 10px 0;
     z-index: 1000;
-    border: none; /* Remove border around the container */
+    border-bottom: 2px solid black; 
 }
 
 /* Individual buttons that span the entire width */
@@ -198,6 +198,12 @@ p {
 /* Home page button container */
 #home-page .button-container {
     background: none;
+    border-bottom: none;
+    width: 70%; /* Make the button container take up 90% of the width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px 0; /* Vertical padding for top and bottom */
+    display: flex; /* Flexbox for dynamic alignment */
+    justify-content: center; /* Center the buttons inside the container */
 }
 
 /* Top buttons styling */
@@ -287,6 +293,7 @@ p {
         gap: 20px;
         width: 100%;
     }
+    
 
     #home-page .button-container a {
         width: 40%;
