@@ -125,23 +125,6 @@ body::before {
     outline: none;  /* Ensure no outline on hover */
 }
 
-
-/* Ensure the hover effect works on all pages */
-#designs-page .top-left-box:hover,
-#designs-page .top-middle-box:hover,
-#designs-page .top-right-box:hover,
-#about-page .top-left-box:hover,
-#about-page .top-middle-box:hover,
-#about-page .top-right-box:hover,
-#contact-page .top-left-box:hover,
-#contact-page .top-middle-box:hover,
-#contact-page .top-right-box:hover {
-    transform: scale(1.1);
-    background-color: black;
-    color: white;
-    outline: none; /* Prevent outline on hover */
-}
-
 /* Image container */
 .image-container {
     width: 100%; 
@@ -210,15 +193,6 @@ p {
     margin-bottom: 50px;  
     padding: 10px 0;
     z-index: 1000;
-}
-
-/* Page-specific sticky button container background */
-#designs-page .button-container,
-#about-page .button-container,
-#contact-page .button-container {
-    position: sticky;
-    top: 0;
-    background: linear-gradient(to bottom, white, transparent); 
 }
 
 /* Home page button container */
