@@ -57,7 +57,7 @@ body::before {
 .main-buttons .top-left-box,
 .main-buttons .top-middle-box,
 .main-buttons .top-right-box {
-    padding: 12px 30px;  
+    padding: 14px 30px;  
     border: 2px solid black;  
     border-radius: 5px;
     background-color: transparent;
