@@ -27,6 +27,13 @@ body {
     background-image: url('BGH.png'); 
 }
 
+#designs-page .full-width-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
 /* Hover effects for buttons on the home page */
 #home-page .top-left-box:hover,
 #home-page .top-middle-box:hover,
