@@ -27,14 +27,6 @@ body {
     background-image: url('BGH.png'); 
 }
 
-.designs-banner {
-    width: 100%;  /* Full width */
-    max-height: 300px; /* Adjust height as needed */
-    object-fit: cover; /* Crop to fit */
-    display: block;
-    margin-bottom: 20px; /* Space below the image */
-}
-
 /* Hover effects for buttons on the home page */
 #home-page .top-left-box:hover,
 #home-page .top-middle-box:hover,
