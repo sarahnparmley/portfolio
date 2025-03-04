@@ -27,11 +27,12 @@ body {
     background-image: url('BGH.png'); 
 }
 
-.banner-image {
-    width: 100%; /* Ensures it spans the full width of the screen */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 300px; /* Limits height (adjust this if needed) */
+.designs-banner {
+    width: 100%;  /* Full width */
+    max-height: 300px; /* Adjust height as needed */
+    object-fit: cover; /* Crop to fit */
     display: block;
+    margin-bottom: 20px; /* Space below the image */
 }
 
 /* Hover effects for buttons on the home page */
