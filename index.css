@@ -259,9 +259,9 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
+    height: 0vh; 
     text-align: center;
-    margin-top: -100px;
+    margin-top: 250px;
 }
 
 .contact-container h1 {
