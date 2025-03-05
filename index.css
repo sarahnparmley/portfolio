@@ -303,7 +303,6 @@ p {
         width: 100%;
     }
     
-
     #home-page .button-container a {
         width: 40%;
         max-width: 300px;
@@ -311,6 +310,15 @@ p {
         padding: 15px;
         font-size: 1.2rem;
         border-radius: 8px;
+    }
+
+    #designs-banner {
+        width: 100%; /* Adjust the width of the designs banner */
+        max-width: 400px; /* Set a max width */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px; /* Adjust top margin for mobile screens */
+        margin-left: auto;
+        margin-right: auto; /* Center the image */
     }
 }
 
@@ -345,7 +353,7 @@ p {
         flex: 1; 
         max-width: 100px; 
         font-size: 1rem;
-        padding: 10px 20px;
+        padding: 20px 10px;
         text-align: center;
     }
 
@@ -362,7 +370,7 @@ p {
     }
 
     .design-section p {
-        font-size: 1.8rem; 
+        font-size: 1.2rem; 
     }
 }
 
@@ -389,6 +397,6 @@ p {
         justify-content: center;
         gap: 20px;
         padding: 0px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 }
