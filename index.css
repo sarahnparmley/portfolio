@@ -41,6 +41,14 @@ body {
     background-image: url('.png'); 
 }
 
+#designs-banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
 /* Body background overlay */
 body::before {
     content: "";
