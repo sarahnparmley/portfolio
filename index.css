@@ -318,7 +318,7 @@ p {
 @media (max-width: 500px) {
     .image-container {
         max-width: 250px;
-        padding-top: 140px;
+        padding-top: 120px;
     }
 
     .contact-container h1 {
