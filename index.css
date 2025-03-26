@@ -24,7 +24,7 @@ body {
 
 /* Home page background image */
 #home-page {
-    background-image: url('BGH.png'); 
+    background-image: url('.png'); 
 }
 
 /* Hover effects for buttons on the home page */
