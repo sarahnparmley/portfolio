@@ -38,112 +38,37 @@ body {
     background-color: #ff86c8;
         }
 
-
-
-/* Sticky buttons container at the top */
-.sticky-buttons {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.button-container {
+    position: absolute;
+    top: 330px; /* Adjust depending on spacing you want below name */
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
     background: none;
-    padding: 10px 20px;
-    text-align: center;
+    border: none;
+    padding: 0;
 }
 
-/* Hover effects for buttons on the home page */
-#home-page .top-left-box:hover,
-#home-page .top-middle-box:hover,
-#home-page .top-right-box:hover {
-    transform: none;
-    background-color: black;
-    color: white;
-}
-
-/* Contact page background image */
-#contact-page {
-    background-image: url('.png'); 
-}
-
-#designs-banner {
-    width: 100%;
-    max-height: auto;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 60px;
-    margin-top: -140px;
-}
-
-/* General button styles */
 .main-buttons .top-left-box,
 .main-buttons .top-middle-box,
 .main-buttons .top-right-box {
-    padding: 14px 30px;  
-    border: 2px solid black;  
+    padding: 10px 20px;
+    border: 2px solid black;
     border-radius: 5px;
     background-color: transparent;
-    font-size: 1.2rem;  
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;  
-    transition: all 0.3s ease;
-    color: black;
-    display: inline-block;
-}
-
-/* Hover effects for buttons */
-#designs-page .top-left-box:hover,
-#designs-page .top-middle-box:hover,
-#designs-page .top-right-box:hover,
-#about-page .top-left-box:hover,
-#about-page .top-middle-box:hover,
-#about-page .top-right-box:hover,
-#contact-page .top-left-box:hover,
-#contact-page .top-middle-box:hover,
-#contact-page .top-right-box:hover {
-    transform: scale(1.3); 
-    background-color: none;
-    color: black;
-    text-decoration: none !important;
-}
-
-/* Button container to span the full width at the top */
-.button-container {
-    display: flex;
-    justify-content: space-around; /* Distribute the buttons evenly */
-    width: 100%; /* Full width */
-    background-color: rgba(255, 255, 255, 0.8); /* 80% opacity background */
-    padding: 10px 0;
-    z-index: 1000;
-    border-bottom: 3px solid black; 
-}
-
-/* Individual buttons that span the entire width */
-.top-left-box, .top-middle-box, .top-right-box {
-    padding: 12px 30px;
-    border: 2px solid white;  /* White border (optional) */
-    border-radius: 5px;
-    background-color: white; /* Default background */
     font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
-    flex: 1;  /* Make buttons span the same width */
-    transition: all 0.3s ease-in-out;
+    text-align: left;
+    width: auto;
+    transition: all 0.3s ease;
     color: black;
-    display: inline-block;
-    text-align: center;
-    margin: 0 10px; /* Ensure some space between buttons */
 }
 
-/* Hover effect on top buttons */
-.top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
-    transform: scale(1.1);  /* Reduced scale to prevent overflow */
-    background-color: none; /* Maintain transparency with slight opacity change */
-    color: black;
-    text-decoration: none !important;
-    outline: none;  /* Ensure no outline on hover */
-}
+
+
 
 /* Image container */
 .image-container {
