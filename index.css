@@ -4,36 +4,38 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     
-        .name-header {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            text-align: left;
-            z-index: 1000;
-        }
+.name-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+    z-index: 1001;
+}
 
-        .name-header h1 {
-            margin: 0;
-            font-size: 6.5rem;
-            font-weight: 600;
-            line-height: 1;
+.first-name,
+.last-name {
+    margin: 0;
+    font-size: 6.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
 
-        .last-and-portfolio {
-        display: flex;
-        align-items: baseline;
-        gap: 10px;
-        }
+.last-and-portfolio {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
 
-        .portfolio-text {
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        }
-        }
+.portfolio-text {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+    
        }
 
-        #home-page {
-            background-color: #ff86c8;
+#home-page {
+    background-color: #ff86c8;
         }
 
 
