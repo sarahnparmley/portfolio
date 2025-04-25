@@ -1,4 +1,4 @@
-/* home page styling */
+/* home page text */
 body {
     
     font-family: 'Poppins', sans-serif;
@@ -34,13 +34,15 @@ body {
     
        }
 
+/* home page background color */
 #home-page {
     background-color: #ff86c8;
         }
 
+/* home page button containers */
 .button-container {
     position: absolute;
-    top: 330px; /* Adjust depending on spacing you want below name */
+    top: 330px; 
     left: 20px;
     display: flex;
     flex-direction: column;
