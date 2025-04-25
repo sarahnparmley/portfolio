@@ -17,6 +17,18 @@ body {
             font-size: 6.5rem;
             font-weight: 600;
             line-height: 1;
+
+        .last-and-portfolio {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        }
+
+        .portfolio-text {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        }
         }
        }
 
