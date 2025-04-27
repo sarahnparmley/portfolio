@@ -13,29 +13,29 @@ body {
 }
 
 .logo-image {
-    width: 100px; /* Adjust logo size */
+    width: 60px;
     height: auto;
     margin-bottom: 10px;
 }
 
 .name-container {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 250px;
 }
 
 .first-name {
     margin: 0;
-    font-size: 6rem;
+    font-size: 2.2rem;
     font-weight: 300;
     line-height: 1.1;
 }
 
 .portfolio-text {
     display: block;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* Button container */
