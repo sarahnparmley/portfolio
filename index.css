@@ -1,5 +1,4 @@
 /* Home page text */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -64,21 +63,89 @@ body::before {
 /* Style for Portfolio button */
 .portfolio-button {
     text-decoration: none;
-    display: inline-block; 
-    color: #ffffff; 
+    display: inline-block;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     letter-spacing: 1px;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Button hover effect */
 .portfolio-button:hover {
-    text-decoration: underline; 
-    color: #ffffff; 
+    text-decoration: underline;
+    color: #ffffff;
 }
+
+/* Navbar container */
+.navbar {
+    position: fixed; /* Fix navbar at the top */
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensure navbar is on top */
+    padding: 10px; /* Add some padding to avoid overlap */
+}
+
+/* Navbar list */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar item */
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* Navbar link */
+.nav-link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 15px; /* Add padding for spacing */
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it right below the parent */
+    min-width: 180px;
+    background-color: rgba(169, 169, 169, 0.9); /* Gray background */
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* Dropdown link */
+.dropdown-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Hover effect for dropdown */
+.nav-item:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Hover effect on dropdown links */
+.dropdown-link:hover {
+    background-color: #ff86c8; /* Add hover effect */
+}
+
+
+
+
+
+
 
 
 /* Button container */
