@@ -79,6 +79,12 @@ body::before {
     color: #ffffff;
 }
 
+.menu-icon {
+    width: 30px; 
+    height: auto; 
+    display: block;
+}
+
 /* Navbar container */
 .navbar {
     position: fixed; 
