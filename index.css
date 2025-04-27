@@ -4,24 +4,28 @@ body {
     margin: 0;
     background: url('IMG_1335.jpeg') no-repeat center center fixed;
     background-size: cover;
+    position: relative;
+    min-height: 100vh;
 }
 
 body::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 0; /* Start the overlay from the top of the page */
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(245, 245, 220, 0.6); /* semi-beige overlay */
-    z-index: 1; /* Keeps it below the text */
+    height: 100%; /* Cover the entire screen */
+    background: rgba(169, 169, 169, 0.6); /* Semi-gray overlay */
+    z-index: -1; /* Place the overlay behind the content */
 }
 
 .top-content {
+    position: relative;
+    z-index: 1; /* Ensure the text and logo stay above the overlay */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .logo-image {
@@ -52,6 +56,7 @@ body::before {
     margin-top: 10px;
     color: #ffffff;
 }
+
 
 /* Button container */
 .button-container.main-buttons {
