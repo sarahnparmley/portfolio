@@ -13,17 +13,17 @@ body {
 body::before {
     content: "";
     position: absolute;
-    top: 0; /* Start the overlay from the top of the page */
+    top: 0; 
     left: 0;
     width: 100%;
-    height: 100%; /* Cover the entire screen */
-    background: rgba(169, 169, 169, 0.6); /* Semi-gray overlay */
-    z-index: -1; /* Place the overlay behind the content */
+    height: 100%; 
+    background: rgba(169, 169, 169, 0.6); 
+    z-index: -1; 
 }
 
 .top-content {
     position: relative;
-    z-index: 1; /* Ensure the text and logo stay above the overlay */
+    z-index: 1; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,11 +81,11 @@ body::before {
 
 /* Navbar container */
 .navbar {
-    position: fixed; /* Fix navbar at the top */
+    position: fixed; 
     top: 20px;
     left: 20px;
-    z-index: 1000; /* Ensure navbar is on top */
-    padding: 10px; /* Add some padding to avoid overlap */
+    z-index: 1000; 
+    padding: 10px; 
 }
 
 /* Navbar list */
@@ -105,40 +105,40 @@ body::before {
 .nav-link {
     font-size: 1.2rem;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 300;
     display: inline-block;
-    padding: 10px 15px; /* Add padding for spacing */
+    padding: 10px 15px; 
 }
 
 /* Dropdown menu */
 .dropdown {
     display: none;
     position: absolute;
-    top: 100%; /* Position it right below the parent */
+    top: 100%; 
     min-width: 180px;
-    background-color: rgba(169, 169, 169, 0.9); /* Gray background */
     border-radius: 5px;
-    z-index: 1000; /* Ensure it's on top */
+    z-index: 1000; 
 }
 
 /* Dropdown link */
 .dropdown-link {
     color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
     display: block;
-    padding: 10px 15px;
+    padding: 10px;
     text-align: left;
 }
 
 /* Hover effect for dropdown */
 .nav-item:hover .dropdown {
-    display: block; /* Show dropdown on hover */
+    display: block;
 }
 
 /* Hover effect on dropdown links */
 .dropdown-link:hover {
-    background-color: #ff86c8; /* Add hover effect */
+    text-decoration: underline;
+    
 }
 
 
