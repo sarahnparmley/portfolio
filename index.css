@@ -21,6 +21,7 @@ body {
 .name-container {
     text-align: center;
     margin-top: 250px;
+    margin-bottom: 250px;
 }
 
 .first-name {
@@ -34,9 +35,9 @@ body {
 .portfolio-text {
     display: block;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #ffffff;
 }
 
