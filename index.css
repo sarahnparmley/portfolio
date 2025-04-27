@@ -1,56 +1,65 @@
-/* home page text */
+/* Home page text */
 body {
-    
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     margin: 0;
-    
-.name-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: left;
-    z-index: 1001;
+    background-color: #ff86c8;
 }
 
-.first-name,
-.last-name {
-    margin: 0;
-    font-size: 10.5rem;
-    font-weight: 300;
-    line-height: 1;
-}
-
-.last-and-portfolio {
+.top-content {
     display: flex;
-    align-items: baseline;
-    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-image {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.name-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.first-name {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.1;
 }
 
 .portfolio-text {
-    font-size: 2.5rem;
+    display: block;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-top: 10px;
 }
-    
-       }
 
-/* home page background color */
-#home-page {
-    background-color: #ffffff;
-        }
-
-/* home page button containers */
-.button-container {
-    position: absolute;
-    top: 460px; 
-    left: 20px;
+/* Button container */
+.button-container.main-buttons {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    background: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.button-container a {
+    padding: 12px 24px;
+    background: transparent;
     border: none;
-    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.button-container a:hover {
+    transform: scale(1.2);
 }
 
 .main-buttons .top-left-box,
