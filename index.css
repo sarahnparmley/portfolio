@@ -56,10 +56,28 @@ body::before {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 100;
-    text-decoration: underline;
     letter-spacing: 1px;
     margin-top: 10px;
     color: #ffffff;
+}
+
+/* Style for Portfolio button */
+.portfolio-button {
+    text-decoration: none;
+    display: inline-block; 
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Button hover effect */
+.portfolio-button:hover {
+    text-decoration: underline; 
+    color: #ffffff; 
 }
 
 
