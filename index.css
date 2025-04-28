@@ -158,24 +158,24 @@ body::before {
 }
 
 .linkedin-box {
-    padding: 12px 30px;
-    border: 2px solid black;
+    padding: none;
+    border: none;
     border-radius: 5px;
     background-color: transparent;
     font-size: 1.2rem;
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-align: center;
     width: 100px;
     transition: all 0.3s ease;
-    color: black;
+    color: #ffffff;
     display: inline-block;
     margin-top: 40px; 
 }
 
 .linkedin-box:hover {
-    background-color: black;
-    color: white;
+    text-decoration: underline;
+    color: #ffffff;
 }
 
 
