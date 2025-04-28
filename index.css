@@ -262,12 +262,18 @@ body::before {
     content: none; 
 }
 
-.designs-header-image {
-    width: 100%;
-    max-width: 500px;
+.header-landing {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BFB8B0; 
+}
+
+.landing-image {
+    width: 80%;
+    max-width: 600px;
     height: auto;
-    display: block;
-    margin: 0 auto 40px auto; 
 }
 
 .designs-container p {
