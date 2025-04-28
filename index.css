@@ -207,6 +207,45 @@ body::before {
 
 
 
+/* ABOUT PAGE */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0vh; 
+    text-align: center;
+    margin-top: 250px;
+}
+
+.about-container h1 {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: none;
+    color: #ffffff; 
+}
+
+.about-container p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem;
+    margin-top: -15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #ffffff; 
+}
+
+#about-page {
+    margin: 0;
+    background: #BFB8B0;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+#about-page::before {
+    content: none; 
+}
 
 
 
@@ -214,7 +253,10 @@ body::before {
 
 
 
-/* PORTFOLIO PAGE */
+
+
+
+/* PORTFOLIO PAGE - NOT DONE */
 .image-container {
     width: 100%; 
     max-width: 500px; 
