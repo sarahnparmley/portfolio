@@ -249,14 +249,25 @@ body::before {
 
 
 
+/* PORTFOLIO PAGE */
+#portfolio-page {
+    margin: 0;
+    background: #BFB8B0;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
 
+#portfolio-page::before {
+    content: none; 
+}
 
+.designs-container p {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.2rem;
+    color: #ffffff; 
+}
 
-
-
-
-
-/* PORTFOLIO PAGE - NOT DONE */
 .image-container {
     width: 100%; 
     max-width: 500px; 
