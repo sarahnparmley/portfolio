@@ -1,4 +1,4 @@
-/* Home page text */
+/* HOME PAGE */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -60,7 +60,6 @@ body::before {
     color: #ffffff;
 }
 
-/* Style for Portfolio button */
 .portfolio-button {
     text-decoration: none;
     display: inline-block;
@@ -73,19 +72,20 @@ body::before {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Button hover effect */
 .portfolio-button:hover {
     text-decoration: underline;
     color: #ffffff;
 }
 
+
+
+/* MENU */
 .menu-icon {
     width: 30px; 
     height: auto; 
     display: block;
 }
 
-/* Navbar container */
 .navbar {
     position: fixed; 
     top: 20px;
@@ -94,20 +94,17 @@ body::before {
     padding: 10px; 
 }
 
-/* Navbar list */
 .nav-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-/* Navbar item */
 .nav-item {
     position: relative;
     display: inline-block;
 }
 
-/* Navbar link */
 .nav-link {
     font-size: 1.2rem;
     color: #ffffff;
@@ -116,7 +113,6 @@ body::before {
     padding: 10px 15px; 
 }
 
-/* Dropdown menu */
 .dropdown {
     display: none;
     position: absolute;
@@ -128,7 +124,6 @@ body::before {
     padding-left: 0;
 }
 
-/* Dropdown link */
 .dropdown-link {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
@@ -141,15 +136,46 @@ body::before {
     margin-left: 10px;
 }
 
-/* Hover effect for dropdown */
 .nav-item:hover .dropdown {
     display: block;
 }
 
-/* Hover effect on dropdown links */
 .dropdown-link:hover {
     text-decoration: underline;
-    
+}
+
+
+
+/* CONTACT PAGE */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0vh; 
+    text-align: center;
+    margin-top: 250px;
+}
+
+.linkedin-box {
+    padding: 12px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    transition: all 0.3s ease;
+    color: black;
+    display: inline-block;
+    margin-top: 40px; 
+}
+
+.linkedin-box:hover {
+    background-color: black;
+    color: white;
 }
 
 
@@ -199,118 +225,10 @@ body::before {
     object-fit: contain;
 }
 
-/* Heading */
-h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-}
 
-/* Paragraph */
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
 
-/* About container */
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; 
-    min-height: 100vh;  
-}
 
-/* Button container for About, Designs, and Contact pages */
-.button-container {
-    display: flex;
-    gap: 20px;  
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 50px;  
-    padding: 10px 0;
-    z-index: 1000;
-}
 
-/* Home page button container */
-#home-page .button-container {
-    background: none;
-    border-bottom: none;
-    width: 70%; /* Make the button container take up 90% of the width */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 10px 0; /* Vertical padding for top and bottom */
-    display: flex; /* Flexbox for dynamic alignment */
-    justify-content: center; /* Center the buttons inside the container */
-}
-
-/* Top buttons styling */
-.top-left-box, .top-middle-box, .top-right-box {
-    padding: 12px 30px;  
-    border: none;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;  
-    transition: all 0.3s ease-in-out;
-    color: black;
-    display: inline-block;
-}
-
-/* Hover effect on top buttons */
-.top-left-box:hover, .top-middle-box:hover, .top-right-box:hover {
-    transform: scale(1.3); 
-    background-color: none;
-    color: black;
-    text-decoration: none !important;
-}
-
-/* LinkedIn box styling */
-.linkedin-box {
-    padding: 12px 30px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;
-    transition: all 0.3s ease;
-    color: black;
-    display: inline-block;
-    margin-top: 40px; 
-}
-
-/* Hover effect on LinkedIn box */
-.linkedin-box:hover {
-    background-color: black;
-    color: white;
-}
-
-/* Contact container styling */
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 0vh; 
-    text-align: center;
-    margin-top: 250px;
-}
-
-.contact-container h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.contact-container p {
-    font-size: 1.2rem;
-    margin: 5px 0;
-}
-
-/* Media queries for smaller screens */
 
 /* Max-width 768px */
 @media (max-width: 768px) {
