@@ -187,7 +187,7 @@ body::before {
 
 
 
-/* Image container */
+/* PORTFOLIO PAGE */
 .image-container {
     width: 100%; 
     max-width: 500px; 
@@ -197,19 +197,16 @@ body::before {
     margin-top: 140px;
 }
 
-/* Designs container */
 .designs-container {
     text-align: center;
     margin-bottom: 60px;
     text-transform: uppercase;
 }
 
-/* Design section */
 .design-section {
     margin-bottom: 50px;
 }
 
-/* Flexbox for images */
 .images-row {
     display: flex; 
     justify-content: center; 
@@ -217,7 +214,6 @@ body::before {
     flex-wrap: wrap;
 }
 
-/* Design images */
 .design-image {
     max-width: 25%;  
     height: auto;   
@@ -230,7 +226,7 @@ body::before {
 
 
 
-/* Max-width 768px */
+/* SMALLER SCREENS */
 @media (max-width: 768px) {
     #home-page .image-container {
         display: block;
@@ -258,16 +254,15 @@ body::before {
     }
 
     #designs-banner {
-        width: 100%; /* Adjust the width of the designs banner */
-        max-width: 400px; /* Set a max width */
-        height: auto; /* Maintain aspect ratio */
-        margin-top: 10px; /* Adjust top margin for mobile screens */
+        width: 100%; 
+        max-width: 400px; 
+        height: auto; 
+        margin-top: 10px; 
         margin-left: auto;
-        margin-right: auto; /* Center the image */
+        margin-right: auto; 
     }
 }
 
-/* Max-width 500px */
 @media (max-width: 500px) {
     .image-container {
         max-width: 250px;
@@ -283,7 +278,6 @@ body::before {
     }
 }
 
-/* Max-width 768px for button container */
 @media (max-width: 768px) {
     .button-container {
         display: flex;
@@ -319,7 +313,6 @@ body::before {
     }
 }
 
-/* Max-width 768px for images and button container */
 @media (max-width: 768px) {
     .images-row {
         flex-direction: column; 
