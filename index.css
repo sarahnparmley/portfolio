@@ -124,16 +124,21 @@ body::before {
     min-width: 180px;
     border-radius: 5px;
     z-index: 1000; 
+    list-style: none; 
+    padding-left: 0;
 }
 
 /* Dropdown link */
 .dropdown-link {
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
     display: block;
     padding: 10px;
     text-align: left;
+    position: relative;
+    margin-left: 10px;
 }
 
 /* Hover effect for dropdown */
