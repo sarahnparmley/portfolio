@@ -262,6 +262,14 @@ body::before {
     content: none; 
 }
 
+.designs-header-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 40px auto; 
+}
+
 .designs-container p {
     font-family: 'Cormorant Garamond', serif; 
     font-size: 1.2rem;
