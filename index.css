@@ -159,49 +159,6 @@ body::before {
 
 
 
-/* Button container */
-.button-container.main-buttons {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    color: #ffffff;
-}
-
-.button-container a {
-    padding: 12px 24px;
-    background: transparent;
-    border: none;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    transition: transform 0.3s ease;
-}
-
-.button-container a:hover {
-    transform: scale(1.2);
-}
-
-.main-buttons .top-left-box,
-.main-buttons .top-middle-box,
-.main-buttons .top-right-box {
-    padding: 10px 20px;
-    border: 0px;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 2.2rem;
-    font-weight: 600;
-    text-transform: lowercase;
-    text-decoration: none;
-    text-align: left;
-    width: auto;
-    transition: all 0.3s ease;
-    color: black;
-}
-
-
 
 
 /* Image container */
