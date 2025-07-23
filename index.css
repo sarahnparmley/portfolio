@@ -280,6 +280,7 @@ body::before {
 .designs-container p {
     font-family: 'Cormorant Garamond', serif; 
     font-size: 2rem;
+    text-decoration: underline;
     color: #ffffff; 
 }
 
@@ -299,7 +300,7 @@ body::before {
 }
 
 .design-section {
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 .images-row {
